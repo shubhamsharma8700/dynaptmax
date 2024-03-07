@@ -19,7 +19,7 @@ function submitForm() {
   const data = {
     name: name,
     email: email,
-    phone: "9999999990", // Static value as example; adjust as needed
+    phone: "", // Static value as example; adjust as needed
     subject: "Enquery",
     comment: comment
   };
