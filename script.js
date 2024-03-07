@@ -15,6 +15,17 @@ function submitForm() {
     return
   }
 
+  if(email.trim() !=""){
+    if(isValidEmail(email)) {
+      console.log(email + " is a valid email address.");
+    } else {
+      alert(email + " is not a valid email address.");
+      return
+    }
+  }
+
+  
+
   // Prepare the data to be sent
   const data = {
     name: name,
@@ -52,5 +63,12 @@ function submitForm() {
     console.error('Error:', error);
     // Handle error, e.g., showing an error message to the user
   });
+}
+
+function isValidEmail(email) {
+  // Regular expression to test the email format
+  const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  return regex.test(String(email).toLowerCase());
 }
 
