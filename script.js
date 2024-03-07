@@ -65,7 +65,7 @@ function submitForm() {
   .then(data => {
     console.log('Success:', data);
     if(data){
-        alert("Sent Successfully");
+        alert("Email to Sales has been sent successfully.");
         document.getElementById('Inputemail').value=""
         document.getElementById('Inputname').value ="";
         document.getElementById('Inputmessage').value="";
