@@ -1,75 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynapt Max</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" 3 /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dynapt Max</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" 3 />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="style.css" />
-
-  <style>
-    .custom-container {
-        background-color: #46BC5B;
+    <style>
+      .custom-container {
+        background-color: #46bc5b;
         border-radius: 50px;
         padding: 20px;
-    }
+      }
 
-    .custom-header {
-        color: #FFF;
+      .custom-header {
+        color: #fff;
         margin-bottom: 15px;
-    }
+      }
 
-    .highlight-text {
+      .highlight-text {
         color: #213c87;
-    }
+      }
 
-    .custom-button {
+      .custom-button {
         background-color: #213c87;
         border: none;
         color: white;
         padding: 10px 15px;
         border-radius: 20px;
         transition: background-color 0.3s ease;
-    }
+      }
 
-    .custom-button:hover {
+      .custom-button:hover {
         background-color: #365a98;
-    }
+      }
 
-    .video-responsive {
+      .video-responsive {
         position: relative;
         padding-bottom: 56.25%; /* 16:9 aspect ratio */
         height: 0;
-    }
+      }
 
-    .video-responsive iframe {
+      .video-responsive iframe {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-    }
-</style>
-</head>
+      }
+    </style>
+  </head>
 
-<body>
-  <!-- NAVBAR -->
+  <body>
+    <!-- NAVBAR -->
 
-  <nav class=" navbar navbar-expand-lg navbar-light top-0 ram mb-2 ">
+    <!-- <nav class=" navbar navbar-expand-lg navbar-light top-0 ram mb-2 ">
     <div class="container-fluid">
       <div class="logo-sec d-flex">
         <a class="navbar-brand" href="#"><img src="images/dynaptlogo.png" class="logo" alt="" /></a>
@@ -87,9 +106,6 @@
             <a class="nav-link" href="#ABOUT">ABOUT US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#usecase">USE CASES</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#contact">CLIENTS</a>
           </li>
           <li class="nav-item">
@@ -105,228 +121,452 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
-<div class="container-fluid p-5 Home-div ">
-  <div class="row custom-container align-items-center flex-column flex-md-row">
-      <div class="col-12 col-md-7 text-center">
-          <h1 style="color: white;">
-              Looking for a scalable and cost-effective customer support solution?
+  <nav class="navbar navbar-expand-lg navbar-light pt-4 position-sticky top-0 " style="background-color:white; z-index: 99999;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/images/dynaptlogo.png" alt="dynapt" width="150" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px; cursor: pointer;" id="navbarNav">
+          <li class="nav-item mx-2">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#ABOUT">ABOUT US</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#clients">CLIENTS</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#contact">CONTACT SALES</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="#contact" class="btn btn-success text-center py-2">Get started</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+    <div class="container-fluid p-5 Home-div">
+      <div
+        class="row custom-container align-items-center flex-column flex-md-row"
+      >
+        <div class="col-12 col-md-7 text-center">
+          <h1 style="color: white">
+            Looking for a scalable and cost-effective customer support solution?
           </h1>
-          <h2 style="color: #213c87;">We can help!</h2>
-          <p style="color: white;">
-              Seamless customer support: AI-Driven Chatbots, Voice Assistants, and Dynamic Avatars await.
+          <h2 style="color: #213c87">We can help!</h2>
+          <p style="color: white">
+            Seamless customer support: AI-Driven Chatbots, Voice Assistants, and
+            Dynamic Avatars await.
           </p>
           <!-- <div class="mt-2">
               <a href="#contact" class="btn custom-button text-center">Let’s talk </i></a>
           </div> -->
-          <div class="mt-2 ">
-            <a href="#contact" class="btn btn-primary text-center py-2 px-3">Let's talk <span class="mx-2"><i class="bi bi-arrow-right-circle"></i></span></a>
+          <div class="mt-2">
+            <a href="#contact" class="btn btn-primary text-center py-2 px-3"
+              >Let's talk
+              <span class="mx-2"><i class="bi bi-arrow-right-circle"></i></span
+            ></a>
           </div>
-      </div>
-      <div class="col-12 col-md-5 pb-5 d-flex align-items-center flex-column">
+        </div>
+        <div class="col-12 col-md-5 pb-5 d-flex align-items-center flex-column">
           <h2 class="custom-header mt-2">Demo</h2>
-          <div class="video-responsive" style="max-width: 500px; width: 100%;">
-              <iframe
-                src="https://www.youtube.com/embed/__wWxAR0Gf4"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+          <div class="video-responsive" style="max-width: 500px; width: 100%">
+            <iframe
+              src="https://www.youtube.com/embed/__wWxAR0Gf4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
-      </div>
-  </div>
-</div>
-
-  <!-- ABOUT US-->
-<section style="background-color:#213c87" class="py-5" id="ABOUT">
-  <div class="container mb-5">
-    <h1 class="text-center text-light my-5">About <span style="color: #46BC5B;">Dynapt</span> MAX Service</h1>
-    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, libero.</p> -->
-    <div class="row justify-content-center gy-3">
-      <div class="col-md-3 mx-3 text-center border bg-light  py-5" style="border-radius: 10px;">
-        <img src="/images/MicrosoftTeams-image (14).png" alt="" style="width: 50px; margin-bottom: 10px;" />
-        <div>
-          <h3>Dynapt MAX</h3>
-          <p>
-            Dynapt MAX is a Generative AI based Help desk system, which can provide better SLAs and faster resolution of
-            the customers’ problems.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-3 mx-3 text-center border bg-light  py-5" style="border-radius: 10px;">
-        <img src="/images/MicrosoftTeams-image (16).png" alt="" style="width: 45px; margin-bottom: 10px;" />
-        <div>
-          <h3>Communication Interface</h3>
-          <p>
-            Dynapt uses Teams/Email for communicating with customers. It uses an ITSM system to track all customers’
-            request and its resolution ETA.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-3 mx-3 text-center border bg-light  py-5" style="border-radius: 10px;">
-        <img src="/images/MicrosoftTeams-image (13).png" alt="" style="width: 50px; margin-bottom: 10px;" />
-        <div>
-          <h3>Agent upskilling</h3>
-          <p>
-            Dynapt MAX will help to upskills the agents and move them to handle
-            more complex problems with custom trained LLMs.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-3 mx-3 text-center border bg-light  py-5" style="border-radius: 10px;">
-        <img src="/images/MicrosoftTeams-image (15).png" alt="" style="width: 50px; margin-bottom: 10px;" />
-        <div>
-          <h3>Task Bot</h3>
-          <p>
-            Dynapt MAX integrated with a Task Bot, which can automate the tasks
-            and execute them on the fly with minimal human interference.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-3 mx-3 text-center border bg-light  py-5" style="border-radius: 10px;">
-        <img src="/images/MicrosoftTeams-image (11).png" alt="" style="width: 50px; margin-bottom: 10px;" />
-        <div>
-          <h3>Managed Services</h3>
-          <p>
-            Dynapt provides 24x7x365 Managed Services to its customers on a very reasonable price with time bound SLAs.
-          </p>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- use case section -->
-<section class="py-5" id="usecase">
+    <!-- ABOUT US-->
+    <section style="background-color: #213c87" class="py-5" id="ABOUT">
+      <div class="container mb-5">
+        <h1 class="text-center text-light my-5">
+          About <span style="color: #46bc5b">Dynapt</span> MAX Service
+        </h1>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, libero.</p> -->
+        <div class="row justify-content-center gy-3">
+          <div
+            class="col-md-3 mx-3 text-center border bg-light py-5 aboutitems"
+            style="border-radius: 10px"
+          >
+            <img
+              src="/images/MicrosoftTeams-image (14).png"
+              alt=""
+              style="width: 50px; margin-bottom: 10px"
+            />
+            <div>
+              <h3>Dynapt MAX</h3>
+              <p>
+                Dynapt MAX is a Generative AI based Help desk system, which can
+                provide better SLAs and faster resolution of the customers’
+                problems.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-3 mx-3 text-center border bg-light py-5 aboutitems"
+            style="border-radius: 10px"
+          >
+            <img
+              src="/images/MicrosoftTeams-image (16).png"
+              alt=""
+              style="width: 45px; margin-bottom: 10px"
+            />
+            <div>
+              <h3>Communication Interface</h3>
+              <p>
+                Dynapt uses Teams/Email for communicating with customers. It
+                uses an ITSM system to track all customers’ request and its
+                resolution ETA.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-3 mx-3 text-center border bg-light py-5 aboutitems"
+            style="border-radius: 10px"
+          >
+            <img
+              src="/images/MicrosoftTeams-image (13).png"
+              alt=""
+              style="width: 50px; margin-bottom: 10px"
+            />
+            <div>
+              <h3>Agent upskilling</h3>
+              <p>
+                Dynapt MAX will help to upskills the agents and move them to
+                handle more complex problems with custom trained LLMs.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-3 mx-3 text-center border bg-light py-5 aboutitems"
+            style="border-radius: 10px"
+          >
+            <img
+              src="/images/MicrosoftTeams-image (15).png"
+              alt=""
+              style="width: 50px; margin-bottom: 10px"
+            />
+            <div>
+              <h3>Task Bot</h3>
+              <p>
+                Dynapt MAX integrated with a Task Bot, which can automate the
+                tasks and execute them on the fly with minimal human
+                interference.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-3 mx-3 text-center border bg-light py-5 aboutitems"
+            style="border-radius: 10px"
+          >
+            <img
+              src="/images/MicrosoftTeams-image (11).png"
+              alt=""
+              style="width: 50px; margin-bottom: 10px"
+            />
+            <div>
+              <h3>Managed Services</h3>
+              <p>
+                Dynapt provides 24x7x365 Managed Services to its customers on a
+                very reasonable price with time bound SLAs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- use case section -->
+    <!-- <section class="py-5" id="usecase">
   <div class="container-fluid" style="background-image: url(images/BOT\ architecture.png);width: 100%; height: 100vh; background-size:contain; background-position: center; background-repeat: no-repeat; ">
   </div>
-</section>
+</section> -->
 
-<!-- design -->
-<section>
-  <div class="container-fluid my-5">
-    <div class="row no-gutters">
-        <div class="col-md-6 banner-section banner-left d-flex flex-column justify-content-center align-items-center">
-            <h1>DYNAPT <span style="color: #213c87;">MAX</span></h1>
-            <h2>DYNAPT MANAGED AZURE EXPERIENCE</h2>
-        </div>
-        <div class="col-md-6 banner-section banner-right d-flex flex-column justify-content-center align-items-center">
-            <h2>Video Chat with an AI on human terms.</h2>
+    <!-- design -->
+    <section>
+      <div class="container-fluid design-container">
+        <div class="row no-gutters">
+          <div
+            class="col-md-6 banner-section banner-left d-flex flex-column justify-content-center align-items-center"
+          >
+            <h1 class="bannerheading">
+              DYNAPT <span style="color: #213c87">MAX</span>
+            </h1>
+            <h2 class="bannerheading">DYNAPT MANAGED EXPERIENCE</h2>
+          </div>
+          <div
+            class="col-md-6 banner-section banner-right d-flex flex-column justify-content-center align-items-center"
+          >
+            <h2 class="bannerheading">Video Chat with an AI on human terms.</h2>
             <!-- <button class="chat-button mt-3">CHAT NOW!!</button> -->
-            <a href="#contact" class="btn btn-success text-center py-2 px-2 mt-2">CHAT NOW!</a>
-        </div>  
-    </div>
-</div>
-</section>
+            <a
+              href="#contact"
+              class="btn btn-success text-center py-2 px-2 mt-2"
+              >CHAT NOW!</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="container my-5">
-  <div class="row">
-      <!-- STANDARD Card -->
-      <div class="col-md-6 col-lg-6 mb-3">
+
+  
+    <div class="container my-5">
+      <div class="row">
+        <!-- STANDARD Card -->
+        <div class="col-md-6 col-lg-6 mb-3">
           <div class="card card-custom">
             <div class="card-header card-header-custom">
-              <span style="color: #213c87;"><h2>STANDARD</h2></span>
-              <div><h3 style="color:#767070;">Azure Support Offerings</h3></div>
-          </div>
-              <div class="card-body card-body-custom">
-                  <ul class="list-group list-group-flush">
-                      <li class="list-group-item"><span class="feature-icon"></span>24x7x365 Monitoring and Support</li>
-                      <li class="list-group-item"><span class="feature-icon"></span>Backup and Disaster Recovery</li>
-                      <li class="list-group-item"><span class="feature-icon"></span>Cloud Governance</li>
-                  </ul>
-                  <a href="#contact" class="btn btn-custom">Get Started</a>
-                  <div class="text-center text-muted small mt-2">0 Cost Onboarding
-                  </div>
+              <span style="color: #213c87"><h2>STANDARD</h2></span>
+              <div><h3 style="color: #767070">Support Offerings</h3></div>
+            </div>
+            <div class="card-body card-body-custom">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <span class="feature-icon"></span>24x7x365 Monitoring and
+                  Support
+                </li>
+                <li class="list-group-item">
+                  <span class="feature-icon"></span>Backup and Disaster Recovery
+                </li>
+                <li class="list-group-item">
+                  <span class="feature-icon"></span>Cloud Governance
+                </li>
+              </ul>
+              <a href="#contact" class="btn btn-custom">Get Started</a>
+              <div class="text-center text-muted small mt-2">
+                0 Cost Onboarding
               </div>
+            </div>
           </div>
-      </div>
-      <!-- PREMIUM Card -->
-      <div class="col-md-6 col-lg-6 mb-3">
+        </div>
+        <!-- PREMIUM Card -->
+        <div class="col-md-6 col-lg-6 mb-3">
           <div class="card card-custom">
-              <div class="card-header card-header-custom">
-                  <span style="color: #213c87;"><h2>PREMIUM</h2></span>
-                  <div><h3 style="color:#767070;">Azure Support Offerings</h3></div>
+            <div class="card-header card-header-custom">
+              <span style="color: #213c87"><h2>PREMIUM</h2></span>
+              <div><h3 style="color: #767070">Support Offerings</h3></div>
+            </div>
+            <div class="card-body card-body-custom">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <span class="feature-icon"></span>24x7x365 Monitoring and
+                  Support
+                </li>
+                <li class="list-group-item">
+                  <span class="feature-icon"></span>Backup and Disaster Recovery
+                </li>
+                <li class="list-group-item">
+                  <span class="feature-icon"></span>Cloud Governance
+                </li>
+                <li class="list-group-item">
+                  <span class="feature-icon"></span>Technical Expertise
+                </li>
+                <li class="list-group-item">
+                  <span class="feature-icon"></span>Performance Optimization
+                </li>
+                <li class="list-group-item">
+                  <span class="feature-icon"></span>Security and Compliance
+                </li>
+                <li class="list-group-item">
+                  <span class="feature-icon"></span>Cost Optimization
+                </li>
+              </ul>
+              <a href="#contact" class="btn btn-custom">Get Started</a>
+              <div class="text-center text-muted small mt-2">
+                0 Cost Onboarding
               </div>
-              <div class="card-body card-body-custom">
-                  <ul class="list-group list-group-flush">
-                      <li class="list-group-item"><span class="feature-icon"></span>24x7x365 Monitoring and Support</li>
-                      <li class="list-group-item"><span class="feature-icon"></span>Backup and Disaster Recovery</li>
-                      <li class="list-group-item"><span class="feature-icon"></span>Cloud Governance</li>
-                      <li class="list-group-item"><span class="feature-icon"></span>Technical Expertise</li>
-                      <li class="list-group-item"><span class="feature-icon"></span>Performance Optimization</li>
-                      <li class="list-group-item"><span class="feature-icon"></span>Security and Compliance</li>
-                      <li class="list-group-item"><span class="feature-icon"></span>Cost Optimization</li>
-                  </ul>
-                  <a href="#contact" class="btn btn-custom">Get Started</a>
-                  <div class="text-center text-muted small  mt-2">0 Cost Onboarding
-                  </div>
-              </div>
+            </div>
           </div>
+        </div>
       </div>
+    </div>
 
-  </div>
-</div>
+      <!-- clients -->
+    <div class="container" id="clients">
+      <h1 class="text-center" style="color: #213c87;">Our clients</h1>
+      <div class="owl-carousel owl-theme my-5">
+        <div class="item">
+          <img src="images/tcns_logo.png" alt="" class="carousel-img" />
+        </div>
+        <div class="item">
+          <img src="images/OIP.jpg" alt="" class="carousel-img" />
+        </div>
+        <div class="item">
+          <img src="images/cititrends.png" alt="" class="carousel-img" />
+        </div>
+        <div class="item">
+          <img src="images/gail.jpg" alt="" class="carousel-img" />
+        </div>
+        <div class="item">
+          <img src="images/stemz-logo.png" alt="" class="carousel-img" />
+        </div>
+        <div class="item">
+          <img src="images/Learnup.jpg" alt="" class="carousel-img" />
+        </div>
+        <div class="item">
+          <img
+            src="images/pricewaterhousecoopers_logo.svg"
+            alt=""
+            class="carousel-img"
+          />
+        </div>
+        <div class="item">
+          <img src="images/logo_el.png" alt="" class="carousel-img" />
+        </div>
+        <div class="item">
+          <img src="images/Highlights_Logo.jpg" alt="" class="carousel-img" />
+        </div>
+        <div class="item">
+          <img src="images/esiclogo.png" alt="" class="carousel-img" />
+        </div>
+      </div>
+    </div>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact">
-  <div class="container-fluid py-5" id="back" style="background-color:#213c87">
-    <div class="row text-center p-5">
-        <h1 class="text-white" style="font-family: roboto;">Book a free consultation.</h1>
-        <h2 class="text-white mb-5" style="font-family: roboto;">Engage, support, and impress clients with <span style="color: #46BC5B;">Dynapt</span> Max.</h2>
-        
-        <!-- Centering the column by using offset classes -->
-        <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div
+        class="container-fluid py-5"
+        id="back"
+        style="background-color: #213c87"
+      >
+        <div class="row text-center p-5">
+          <h1 class="text-white CONTACTheading" style="font-family: roboto">
+            Book a free consultation.
+          </h1>
+          <h2
+            class="text-white mb-5 CONTACTheading"
+            style="font-family: roboto"
+          >
+            Engage, support, and impress clients with
+            <span style="color: #46bc5b">Dynapt</span> Max.
+          </h2>
+
+          <!-- Centering the column by using offset classes -->
+          <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
             <div class="input-group flex-nowrap mb-2">
-                <span class="input-group-text" id="addon-wrapping"><i class="bi bi-person"></i></span>
-                <!-- Adjust input size for responsiveness -->
-                <input type="text" class="form-control form-control-sm" placeholder="Enter your name" aria-label="Username"
-                aria-describedby="addon-wrapping" id="Inputname">
+              <span class="input-group-text" id="addon-wrapping"
+                ><i class="bi bi-person"></i
+              ></span>
+              <!-- Adjust input size for responsiveness -->
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                placeholder="Enter your name"
+                aria-label="Username"
+                aria-describedby="addon-wrapping"
+                id="Inputname"
+              />
             </div>
             <div class="input-group flex-nowrap mb-2">
-                <span class="input-group-text" id="addon-wrapping"><i class="bi bi-envelope"></i></span>
-                <!-- Adjust input size for responsiveness -->
-                <input type="email" class="form-control form-control-sm" placeholder="Enter your email" aria-label="Enter your email"
-                aria-describedby="addon-wrapping" id="Inputemail">
+              <span class="input-group-text" id="addon-wrapping"
+                ><i class="bi bi-envelope"></i
+              ></span>
+              <!-- Adjust input size for responsiveness -->
+              <input
+                type="email"
+                class="form-control form-control-sm"
+                placeholder="Enter your email"
+                aria-label="Enter your email"
+                aria-describedby="addon-wrapping"
+                id="Inputemail"
+              />
             </div>
             <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping"><i class="bi bi-pencil-square"></i></span>
-                <!-- Adjust textarea size for responsiveness -->
-                <textarea class="form-control form-control-sm" placeholder="Leave a comment here"
-                aria-describedby="addon-wrapping" id="Inputmessage"></textarea>
+              <span class="input-group-text" id="addon-wrapping"
+                ><i class="bi bi-pencil-square"></i
+              ></span>
+              <!-- Adjust textarea size for responsiveness -->
+              <textarea
+                class="form-control form-control-sm"
+                placeholder="Leave a comment here"
+                aria-describedby="addon-wrapping"
+                id="Inputmessage"
+              ></textarea>
             </div>
-           <button id="Submit" onclick="submitForm()" class="btn btn-transparent text-white border-white px-5 mt-5 pt-2">Submit</button>
+            <button
+              id="Submit"
+              onclick="submitForm()"
+              class="btn btn-transparent text-white border-white px-5 mt-5 pt-2"
+            >
+              Submit
+            </button>
+          </div>
         </div>
-    </div>
-</div>
-</section>
+      </div>
+    </section>
 
-  <!-- FOOTER SECTION -->
-  <div class="container-fluid bg-dark text-white py-3">
-   
-    <div class="row">
-      <!-- <a href="mailto:shubhamsharma7120@gmail.com" class="btn btn-success mb-1">mail</a>
-      <a href="tel:+91-8878787878" class="btn btn-success">call us</a> -->
-      <p class="text-center">© 2023 Dynapt Inc. All rights reserved.</p>
-      <p class="text-center">Terms of service.</p>
-      <p class="text-center">Privacy policy</p>
+    <!-- FOOTER SECTION -->
+    <div
+      class="container-fluid text-white py-3"
+      style="background-color: black"
+    >
+      <div class="row">
+        <div class="col-md-4 col-sm-8">
+          <p class="text-center">© 2023 Dynapt Inc. All rights reserved.</p>
+        </div>
+        <div class="col-md-4 col-sm-8">
+          <p class="text-center">
+            <a
+              target="_blank"
+              href="https://www.dynapt.com/images/Dynapt_Terms.pdf"
+              style="color: white; text-decoration: none"
+              >Terms of Service</a
+            >
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-8">
+          <p class="text-center">
+            <a
+              target="_blank"
+              href="https://www.dynapt.com/images/Dynapt_Privacy_Policy.pdf"
+              style="color: white; text-decoration: none"
+              >Privacy policy</a
+            >
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <!-- LINKED SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    <!-- LINKED SCRIPTS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-</body>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
