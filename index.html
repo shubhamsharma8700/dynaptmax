@@ -1,573 +1,1068 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dynapt Max</title>
-    <link href="/images/MicrosoftTeams-image (33).png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" 3 /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="style.css" />
 
-    <style>
-      .custom-container {
-        background-color: #46bc5b;
-        border-radius: 50px;
-        padding: 20px;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DynaptMAX</title>
 
-      .custom-header {
-        color: #fff;
-        margin-bottom: 15px;
-      }
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;700;800&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="./assets/logo/Asset 2 1.png">
 
-      .highlight-text {
-        color: #213c87;
-      }
+  <style>
+    .carousel-inner>.item>img,
+    .carousel-inner>.item>a>img {
+      width: 70%;
+      margin: auto;
+    }
+  </style>
+</head>
 
-      .custom-button {
-        background-color: #213c87;
-        border: none;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 20px;
-        transition: background-color 0.3s ease;
-      }
-
-      .custom-button:hover {
-        background-color: #365a98;
-      }
-
-      .video-responsive {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
-        height: 0;
-      }
-
-      .video-responsive iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
-  </head>
-
-  <body>
-    <!-- NAVBAR -->
-
-    <!-- <nav class=" navbar navbar-expand-lg navbar-light top-0 ram mb-2 ">
-    <div class="container-fluid">
-      <div class="logo-sec d-flex">
-        <a class="navbar-brand" href="#"><img src="images/dynaptlogo.png" class="logo" alt="" /></a>
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#ABOUT">ABOUT US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">CLIENTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">CONTACT SALES</a>
-          </li>
-          <li class="nav-item">
-          </li>
-          <li class="px-2">
-            <div class="mt-2 ">
-              <a href="#contact" class="btn btn-success text-center py-2">Get started</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
-
-  <nav class="navbar navbar-expand-lg navbar-light pt-4 position-sticky top-0 " style="background-color:white; z-index: 99999;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="/images/DynaptMaxLogo.png" alt="dynapt" width="200" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px; cursor: pointer;" id="navbarNav">
-          <li class="nav-item mx-2">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#ABOUT">About Us</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#clients">Customers</a>
-          </li>
-          <!-- <li class="nav-item mx-2">
-            <a class="nav-link" href="#contact">CONTACT SALES</a>
-          </li> -->
-          <li class="nav-item mx-2">
-            <a href="#contact" class="btn text-center py-2" style=" background-color: #45a049;color: white;">Get started</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-
-    <div class="container-fluid p-5 Home-div">
-      <div
-        class="row custom-container align-items-center flex-column flex-md-row"
-      >
-        <div class="col-12 col-md-7 text-center">
-          <h1 style="color: white">
-            Looking for a scalable and cost-effective customer support solution?
-          </h1>
-          <h2 style="color: #213c87">We can help!</h2>
-          <p style="color: white">
-            Seamless customer support: AI-Driven Chatbots, Voice Assistants, and
-            Dynamic Avatars await.
-          </p>
-          <!-- <div class="mt-2">
-              <a href="#contact" class="btn custom-button text-center">Let’s talk </i></a>
-          </div> -->
-          <div class="mt-2">
-            <a href="#contact" class="btn btn-primary text-center py-2 px-3"
-              >Let's talk
-              <span class="mx-2"><i class="bi bi-arrow-right-circle"></i></span
-            ></a>
-          </div>
-        </div>
-        <div class="col-12 col-md-5 pb-5 d-flex align-items-center flex-column">
-          <h2 class="custom-header mt-3"></h2>
-          <div class="video-responsive" style="max-width: 500px; width: 100%">
-            <iframe
-              src="https://www.youtube.com/embed/8ahIBTDA7CE"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ABOUT US-->
-    <section style="background-color: #213c87" class="py-5" id="ABOUT">
-      <div class="container mb-5">
-        <h1 class="text-center text-light my-5">
-          About <span style="color: #46bc5b">Dynapt</span> MAX Service
-        </h1>
-        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, libero.</p> -->
-        <div class="row justify-content-center gy-3">
-          <div
-            class="col-md-3 mx-3 text-center border bg-light py-5 aboutitems"
-            style="border-radius: 10px"
-          >
-            <img
-              src="/images/MicrosoftTeams-image (14).png"
-              alt=""
-              style="width: 50px; margin-bottom: 10px"
-            />
-            <div>
-              <h3>Dynapt MAX</h3>
-              <p>
-                Dynapt MAX is a Generative AI based Help desk system, which can
-                provide better SLAs and faster resolution of the customers’
-                problems.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-3 mx-3 text-center border bg-light py-5 aboutitems"
-            style="border-radius: 10px"
-          >
-            <img
-              src="/images/MicrosoftTeams-image (16).png"
-              alt=""
-              style="width: 45px; margin-bottom: 10px"
-            />
-            <div>
-              <h3>Communication Interface</h3>
-              <p>
-                Dynapt uses Teams/Email for communicating with customers. It
-                uses an ITSM system to track all customers’ request and its
-                resolution ETA.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-3 mx-3 text-center border bg-light py-5 aboutitems"
-            style="border-radius: 10px"
-          >
-            <img
-              src="/images/MicrosoftTeams-image (13).png"
-              alt=""
-              style="width: 50px; margin-bottom: 10px"
-            />
-            <div>
-              <h3>Agent upskilling</h3>
-              <p>
-                Dynapt MAX will help to upskills the agents and move them to
-                handle more complex problems with custom trained LLMs.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-3 mx-3 text-center border bg-light py-5 aboutitems"
-            style="border-radius: 10px"
-          >
-            <img
-              src="/images/MicrosoftTeams-image (15).png"
-              alt=""
-              style="width: 50px; margin-bottom: 10px"
-            />
-            <div>
-              <h3>Task Bot</h3>
-              <p>
-                Dynapt MAX integrated with a Task Bot, which can automate the
-                tasks and execute them on the fly with minimal human
-                interference.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-3 mx-3 text-center border bg-light py-5 aboutitems"
-            style="border-radius: 10px"
-          >
-            <img
-              src="/images/MicrosoftTeams-image (11).png"
-              alt=""
-              style="width: 50px; margin-bottom: 10px"
-            />
-            <div>
-              <h3>Managed Services</h3>
-              <p>
-                Dynapt provides 24x7x365 Managed Services to its customers on a
-                very reasonable price with time bound SLAs.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- use case section -->
-    <!-- <section class="py-5" id="usecase">
-  <div class="container-fluid" style="background-image: url(images/BOT\ architecture.png);width: 100%; height: 100vh; background-size:contain; background-position: center; background-repeat: no-repeat; ">
-  </div>
-</section> -->
-
-    <!-- design -->
-    <section>
-      <div class="container-fluid design-container">
-        <div class="row no-gutters">
-          <div
-            class="col-md-6 banner-section banner-left d-flex flex-column justify-content-center align-items-center"
-          >
-            <h1 class="bannerheading">
-              DYNAPT <span style="color: #213c87">MAX</span>
-            </h1>
-            <h2 class="bannerheading">DYNAPT MANAGED EXPERIENCE</h2>
-          </div>
-          <div
-            class="col-md-6 banner-section banner-right d-flex flex-column justify-content-center align-items-center"
-          >
-            <h2 class="bannerheading">Video Chat with an AI on human terms.</h2>
-            <!-- <button class="chat-button mt-3">CHAT NOW!!</button> -->
-            <a
-              href="#contact"
-              class="btn text-center py-2 px-2 mt-2"
-               style=" background-color: #45a049;color: white;">CHAT NOW!</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-  
-    <div class="container my-5">
-      <div class="row">
-        <!-- STANDARD Card -->
-        <div class="col-md-6 col-lg-6 mb-3">
-          <div class="card card-custom">
-            <div class="card-header card-header-custom">
-              <span style="color: #213c87"><h2>STANDARD</h2></span>
-              <div><h3 style="color: #767070">Support Offerings</h3></div>
-            </div>
-            <div class="card-body card-body-custom">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <span class="feature-icon"></span>24x7x365 Monitoring and
-                  Support
-                </li>
-                <li class="list-group-item">
-                  <span class="feature-icon"></span>Backup and Disaster Recovery
-                </li>
-                <li class="list-group-item">
-                  <span class="feature-icon"></span>Cloud Governance
-                </li>
-              </ul>
-              <a href="#contact" class="btn btn-custom">Get Started</a>
-              <div class="text-center text-muted small mt-2">
-                0 Cost Onboarding
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- PREMIUM Card -->
-        <div class="col-md-6 col-lg-6 mb-3">
-          <div class="card card-custom">
-            <div class="card-header card-header-custom">
-              <span style="color: #213c87"><h2>PREMIUM</h2></span>
-              <div><h3 style="color: #767070">Support Offerings</h3></div>
-            </div>
-            <div class="card-body card-body-custom">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <span class="feature-icon"></span>24x7x365 Monitoring and
-                  Support
-                </li>
-                <li class="list-group-item">
-                  <span class="feature-icon"></span>Backup and Disaster Recovery
-                </li>
-                <li class="list-group-item">
-                  <span class="feature-icon"></span>Cloud Governance
-                </li>
-                <li class="list-group-item">
-                  <span class="feature-icon"></span>Technical Expertise
-                </li>
-                <li class="list-group-item">
-                  <span class="feature-icon"></span>Performance Optimization
-                </li>
-                <li class="list-group-item">
-                  <span class="feature-icon"></span>Security and Compliance
-                </li>
-                <li class="list-group-item">
-                  <span class="feature-icon"></span>Cost Optimization
-                </li>
-              </ul>
-              <a href="#contact" class="btn btn-custom">Get Started</a>
-              <div class="text-center text-muted small mt-2">
-                0 Cost Onboarding
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      <!-- clients -->
-    <div class="container" id="clients">
-      <h1 class="text-center" style="color: #213c87;">Our Customers</h1>
-      <div class="owl-carousel owl-theme my-5">
-        <div class="item">
-          <img src="images/tcns_logo.png" alt="" class="carousel-img" />
-        </div>
-        <div class="item">
-          <img src="images/OIP.jpg" alt="" class="carousel-img" />
-        </div>
-        <div class="item">
-          <img src="images/cititrends.png" alt="" class="carousel-img" />
-        </div>
-        <div class="item">
-          <img src="images/gail.jpg" alt="" class="carousel-img" />
-        </div>
-        <div class="item">
-          <img src="images/stemz-logo.png" alt="" class="carousel-img" />
-        </div>
-        <div class="item">
-          <img src="images/Learnup.jpg" alt="" class="carousel-img" />
-        </div>
-        <div class="item">
-          <img
-            src="images/pricewaterhousecoopers_logo.svg"
-            alt=""
-            class="carousel-img"
-          />
-        </div>
-        <div class="item">
-          <img src="images/logo_el.png" alt="" class="carousel-img" />
-        </div>
-        <div class="item">
-          <img src="images/Highlights_Logo.jpg" alt="" class="carousel-img" />
-        </div>
-        <div class="item">
-          <img src="images/esiclogo.png" alt="" class="carousel-img" />
-        </div>
-      </div>
-    </div>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-      <div
-        class="container-fluid py-5"
-        id="back"
-        style="background-color: #213c87"
-      >
-        <div class="row text-center p-5">
-          <h1 class="text-white CONTACTheading" style="font-family: roboto">
-            Book a free consultation.
-          </h1>
-          <h2
-            class="text-white mb-5 CONTACTheading"
-            style="font-family: roboto"
-          >
-            Engage, support, and impress clients with
-            <span style="color: #46bc5b">Dynapt</span> Max.
-          </h2>
-
-          <!-- Centering the column by using offset classes -->
-          <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-            <div class="input-group flex-nowrap mb-2">
-              <span class="input-group-text" id="addon-wrapping"
-                ><i class="bi bi-person"></i
-              ></span>
-              <!-- Adjust input size for responsiveness -->
-              <input
-                type="text"
-                class="form-control form-control-sm"
-                placeholder="Enter your name"
-                aria-label="Username"
-                aria-describedby="addon-wrapping"
-                id="Inputname"
-              />
-            </div>
-            <div class="input-group flex-nowrap mb-2">
-              <span class="input-group-text" id="addon-wrapping"
-                ><i class="bi bi-envelope"></i
-              ></span>
-              <!-- Adjust input size for responsiveness -->
-              <input
-                type="email"
-                class="form-control form-control-sm"
-                placeholder="Enter your email"
-                aria-label="Enter your email"
-                aria-describedby="addon-wrapping"
-                id="Inputemail"
-              />
-            </div>
-            <div class="input-group flex-nowrap">
-              <span class="input-group-text" id="addon-wrapping"
-                ><i class="bi bi-pencil-square"></i
-              ></span>
-              <!-- Adjust textarea size for responsiveness -->
-              <textarea
-                class="form-control form-control-sm"
-                placeholder="Leave a comment here"
-                aria-describedby="addon-wrapping"
-                id="Inputmessage"
-              ></textarea>
-            </div>
-            <button
-              id="Submit"
-              onclick="submitForm()"
-              class="btn btn-transparent text-white border-white px-5 mt-5 pt-2"
-            >
-              Submit
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER SECTION -->
+<body>
+  <img class="inner-image" onclick="onChatBot()" src="./assets/logo/dlogo.jpg" alt="">
+  <img class="bot-image" onclick="onChatBot()" src="./assets/logo/icons8-message-50 (1).png" alt="">
+  <div class="bot-chat">
     <div
-      class="container-fluid text-white py-3"
-      style="background-color: black"
-    >
-      <div class="row">
-        <div class="col-md-4 col-sm-8">
-          <p class="text-center">© 2023 Dynapt Inc. All rights reserved.</p>
+      style="display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid rgb(204, 204, 204); background: #45a049; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+      <div style="display: flex; align-items: center; justify-content: center;">
+        <div>
+          <h5 style="margin: 0px; color: white;">Personal Assistant</h5>
+          <p style="margin: 0px; color: white;">Feel free to ask for help</p>
         </div>
-        <div class="col-md-4 col-sm-8">
-          <p class="text-center">
-            <a
-              target="_blank"
-              href="https://www.dynapt.com/images/Dynapt_Terms.pdf"
-              style="color: white; text-decoration: none"
-              >Terms of Service</a
-            >
-          </p>
+        <div class="close">
+          <img src="./assets/close.png" alt="" onclick="closeChatBot()"
+            style="width: 20px; height: 20px; margin-right: -377px; color: white;">
         </div>
-        <div class="col-md-4 col-sm-8">
-          <p class="text-center">
-            <a
-              target="_blank"
-              href="https://www.dynapt.com/images/Dynapt_Privacy_Policy.pdf"
-              style="color: white; text-decoration: none"
-              >Privacy policy</a
-            >
-          </p>
+
+      </div>
+    </div>
+    <div class="bot-body" style="height: 500px;">
+      <iframe src="https://bot.dynaptmax.ai/" width="100%" height="100%" frameborder="0"
+        style="border-radius: 0px 0px 25px 25px;"></iframe>
+    </div>
+  </div>
+  <div class="copy-landing-page">
+
+    <div class="navbar">
+      <div class="dynapt-logo">
+        <img class="logoimage" src="https://dynaptmax.ai/images/DynaptMaxLogo.png" alt="">
+      </div>
+      <div class="menu-icon">
+        <i id="bars" onclick="toggle()" class="fa fa-bars"></i>
+      </div>
+      <div class="navbar-links">
+        <div class="nav-link">
+          <a href="#home" class="home">HOME</a>
+        </div>
+        <div class="nav-link">
+          <a href="#about" class="home">ABOUT US</a>
+        </div>
+        <div class="nav-link">
+          <a href="#use-cases" class="home">USE CASES</a>
+        </div>
+        <div class="nav-link">
+          <a href="#customers" class="home">CLIENTS</a>
+        </div>
+        <div class="nav-link">
+          <a href="#form" class="home">CONTACT</a>
+        </div>
+        <div class="cta-started-59">
+          <span class="get-started-61" id="getStartedButton">
+            GET STARTED
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="small-nav">
+      <ul>
+        <li>home</li>
+        <li>about-us</li>
+        <li>use-cases</li>
+        <li onclick="scrollToSection('customers')">clients</li>
+        <li onclick="scrollToSection('form')">contact-sales</li>
+      </ul>
+    </div>
+
+    <div class="page-1">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active" style="background: white;">
+            <p class="looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help">
+              <span
+                class="looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help-sub377">Partner
+                with a reliable provider to handle surges in support volume.</span><br />
+            </p>
+          </div>
+
+          <div class="item" style="background: white;">
+            <p class="looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help">
+              <span
+                class="looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help-sub377">Implement
+                chatbots for 24/7 support and automated ticketing for faster resolution.</span><br />
+            </p>
+          </div>
+
+          <div class="item">
+            <p class="looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help">
+              <span class="looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help-sub377">Equip
+                your team with ticketing systems and collaboration features.</span><br />
+            </p>
+          </div>
+
+          <div class="item">
+            <p class="looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help">
+              <span
+                class="looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help-sub377">Streamline
+                agent workflows and ensure no inquiry falls through.</span><br />
+            </p>
+          </div>
+
+          <div class="item">
+            <p class="looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help">
+              <span
+                class="looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help-sub377">Leverage
+                sentiment analysis and chatbots to personalize interactions.</span><br />
+            </p>
+          </div>
+
+          <div class="item">
+            <p class="looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help">
+              <span class="looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help-sub377">Build
+                a robust knowledge base and FAQ section to deflect common questions.</span><br />
+            </p>
+          </div>
+
+          <div class="item">
+            <p class="looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help">
+              <span
+                class="looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help-sub377">Implement
+                chatbots for basic inquiries and automated ticketing systems for efficient routing.</span><br />
+            </p>
+          </div>
+
+          <div class="item">
+            <p class="looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help">
+              <span class="looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help-sub377">Equip
+                your team with workflow automation and knowledge base integration.</span><br />
+            </p>
+          </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="icon-prev" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a id="right-arrow-button" class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="icon-next" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="cta-128" onclick="scrollToForm()">
+        <span class="lets-talk">
+          let’s talk!
+        </span>
+        <div class="arrow-circle-right">
+          <img class="vector-23" src="./assets/vector112_x2.svg" />
         </div>
       </div>
     </div>
 
-    <!-- LINKED SCRIPTS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script> -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+    <div class="container-124">
+      <div class="video-here">
+      </div>
+      <div class="clients-64">
+        <div class="our-clientele">
+          Our Clientele
+        </div>
+        <div class="rectangle-17">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/esiclogo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/gail.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Highlights_Logo.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/Learnup.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/OIP.jpg" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/pricewaterhousecoopers_logo (1).svg"
+            alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/tcns_logo.png" alt="Brands">
+          <img loading="lazy" width="120" height="75" src="./assets/logo/cititrends (1).png" alt="Brands">
+
+        </div>
+        <!-- <div class="rectangle-17">
+          <img loading="lazy" width="6297" height="75"
+            src="https://yellow.ai/wp-content/uploads/2024/03/White-2-updated-2024-1.webp?v=3" alt="Brands">
+          <img loading="lazy" width="6297" height="75"
+            src="https://yellow.ai/wp-content/uploads/2024/03/White-2-updated-2024-1.webp?v=3" alt="Brands">
+          <img loading="lazy" width="6297" height="75"
+            src="https://yellow.ai/wp-content/uploads/2024/03/White-2-updated-2024-1.webp?v=3" alt="Brands">
+          <img loading="lazy" width="6297" height="75"
+            src="https://yellow.ai/wp-content/uploads/2024/03/White-2-updated-2024-1.webp?v=3" alt="Brands">
+        </div> -->
+      </div>
+    </div>
+    <div class="rectangle-28">
+      <video autoplay controls loop muted playsinline style="width: 100%; height: 100%;">
+        <source src="./assets/Copy of MAX Bot with narration - Made with Clipchamp 2.mp4" type="video/mp4">
+        <!-- If you have other video formats, you can add them as additional <source> elements -->
+        <track src="./assets/Copy of MAX Bot with narration - Made with Clipchamp 2.mp4" srclang="en" label="Yellow"
+          kind="subtitles">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- <div id="slider-meri">  
+          <div class="slides-12">  
+            <img src="https://hhsbanner.com/wp-content/uploads/2019/03/victoria_falls-900x300.jpg" width="100%" />
+           </div>
+            
+            <div class="slides-12">  
+            <img src="https://blog.cognifit.com/wp-content/uploads/2019/11/hiking-900x300.jpg" width="100%" />
+          </div>
+            
+            <div class="slides-12">  
+            <img src="https://travelfree.info/wp-content/uploads/2018/02/croatia-waterfall-in-deep-forest-of-Cr-12755165-900x300.jpg" width="100%" />
+          </div> 
+            
+             <div class="slides-12">  
+            <img src="https://www.piemonturismo.it/site/wp-content/uploads/2014/07/13-laghi-grande.jpg" width="100%" />
+          </div> 
+            
+          <div class="slides-12">  
+            <img src="https://improvephotography.com/wp-content/uploads/2017/09/Julian-Baird-20170914-3-900px.jpg" width="100%" />
+          </div>  
+            
+            <div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+           </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="services">
+    <div class="dymax">
+      <p class="dynapt-max">
+        <span class="dynapt-max-sub-21">DYNAPT</span><span style="color: #223D88;"
+          class="dynapt-max-sub-23">MAX.AI</span>
+      </p>
+    </div>
+    <div class="dynapt-max-is-a-generative-ai-based-help-desk-system-designed-to-revolutionize-customer-support">
+      DynaptMAX is a Generative-AI based help desk system designed to revolutionize customer support
+    </div>
+
+
+    <div class="container-119">
+      <div class="itsm">
+        <div class="ticket">
+        </div>
+        <p
+          class="integrated-itsm-system-dynapt-max-automatically-generates-tickets-for-all-requests-as-well-as-summarizes-conversations-for-human-support-through-its-integrated-itsm-system">
+          <span
+            class="integrated-itsm-system-dynapt-max-automatically-generates-tickets-for-all-requests-as-well-as-summarizes-conversations-for-human-support-through-its-integrated-itsm-system-sub36">Integrated
+            ITSM System</span><br><br><span
+            class="integrated-itsm-system-dynapt-max-automatically-generates-tickets-for-all-requests-as-well-as-summarizes-conversations-for-human-support-through-its-integrated-itsm-system">DynaptMAX
+            automatically generates tickets for all requests as well as summarizes conversations for human support
+            through its integrated ITSM system</span>
+        </p>
+      </div>
+      <div class="itsm">
+        <div class="adobe-illustrator">
+        </div>
+        <p
+          class="x-7-ai-support-our-24-x-7-x-365-max-bot-services-guarantee-round-the-clock-support-at-a-reasonable-price-backed-by-time-bound-slas">
+          <span
+            class="integrated-itsm-system-dynapt-max-automatically-generates-tickets-for-all-requests-as-well-as-summarizes-conversations-for-human-support-through-its-integrated-itsm-system-sub36">24X7
+            AI Support</span><br><br><span
+            class="integrated-itsm-system-dynapt-max-automatically-generates-tickets-for-all-requests-as-well-as-summarizes-conversations-for-human-support-through-its-integrated-itsm-system">Our
+            24X7x365 MAX bot services guarentee round the clock support at a reasonable price, backed by time bound
+            SLAs</span>
+        </p>
+      </div>
+      <div class="itsm">
+        <div class="omni-channel">
+        </div>
+        <p
+          class="x-7-ai-support-our-24-x-7-x-365-max-bot-services-guarantee-round-the-clock-support-at-a-reasonable-price-backed-by-time-bound-slas">
+          <span
+            class="integrated-itsm-system-dynapt-max-automatically-generates-tickets-for-all-requests-as-well-as-summarizes-conversations-for-human-support-through-its-integrated-itsm-system-sub36">Omni-channel</span><br><br><span
+            class="integrated-itsm-system-dynapt-max-automatically-generates-tickets-for-all-requests-as-well-as-summarizes-conversations-for-human-support-through-its-integrated-itsm-system">Dynapt
+            is an omni-channel service, utilizing channels like Email, WhatsApp, Web, Teams, Inbound Calls Bot, etc., to
+            communication with clients while tracking all their requests and thier solution ETAs.</span>
+        </p>
+      </div>
+      <!-- <div class="au">
+        <div class="au-image">
+        </div>
+        <p
+          class="automatic-escalation-to-l-2-support-dynapt-max-isnt-just-about-resolving-issues-its-about-empowering-your-agents-to-handle-more-complex-problems-which-get-escalated-to-l-2-automatically">
+          <span
+            class="integrated-itsm-system-dynapt-max-automatically-generates-tickets-for-all-requests-as-well-as-summarizes-conversations-for-human-support-through-its-integrated-itsm-system-sub36">Automatic
+            Escalation To L2 Support</span><br><span
+            class="integrated-itsm-system-dynapt-max-automatically-generates-tickets-for-all-requests-as-well-as-summarizes-conversations-for-human-support-through-its-integrated-itsm-system">DynaptMAX
+            isn’t just about resolving issues. It’s about empowering your agents to handle more complex problems, which
+            get escalated to L2 automatically.</span>
+        </p>
+      </div> -->
+    </div>
+
+
+
+
+  </div>
+  <div class="integrations">
+    <div class="container">
+      <div class="container-126">
+        <div class="image-here">
+          <video autoplay="" class="image-here-video" controls="" loop="" muted="" playsinline="" style="width: 100%; height: 100%; background-color: rgb(181, 255, 162)s; height: 400px; border-radius:25px;     box-shadow: 0px 4px 25px 0px #213C87; margin-top: -10px;
+          ">
+            <source src="./assets/logo/MAX PRODUCT VIDEO - Made with Clipchamp 3.mp4" type="video/mp4">
+            <!-- If you have other video formats, you can add them as additional <source> elements -->
+            <track src="./assets/logo/MAX PRODUCT VIDEO - Made with Clipchamp 3.mp4" srclang="en" label="Yellow"
+              kind="subtitles">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div
+          class="looking-for-seamless-integration-without-breaking-the-bank-our-solution-offers-both-affordability-and-ease-of-implementation-ensuring-minimal-disruption-to-your-existing-setup-with-our-low-price-offering-and-hassle-free-integration-process-you-can-enhance-your-customer-support-operations-without-straining-your-budget-or-workflow">
+          Looking for seamless integration without breaking the bank? Our solution offers both affordability and ease of
+          implementation, ensuring minimal disruption to your existing setup. With our low-price offering and
+          hassle-free integration process, you can enhance your customer support operations without straining your
+          budget or workflow.
+          <br>
+          <div class="cta-532" onclick="scrollToForm()">
+            <span class="lets-talk-134">
+              GET STARTED NOW
+            </span>
+            <div class="group-535">
+              <img class="vector-136" src="./assets/vector131_x2.svg" />
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="container-122">
+        <div class="wi">
+          <img class="green-tick-103" src="./assets/logo/check-mark.png" style="   font-weight: bold;
+          font-weight: bold;" />
+          <span class="whats-app">
+            WhatsApp
+          </span>
+        </div>
+        <div class="ibc">
+          <img class="green-tick-103" src="./assets/logo/check-mark.png" />
+          <span class="inbound-calls">
+            Inbound Calls
+          </span>
+        </div>
+        <div class="tn-e">
+          <img class="green-tick-103" src="./assets/logo/check-mark.png" />
+          <span class="teams-e-mails">
+            Teams &amp; E-mails
+          </span>
+        </div>
+        <div class="ice">
+          <img class="green-tick-103" src="./assets/logo/check-mark.png" />
+          <span class="itsm-crm">
+            ITSM &amp; CRM
+          </span>
+        </div>
+      </div>
+    </div>
+    <span class="integrations-102">
+      EASY INTEGRATIONS
+    </span>
+  </div>
+
+
+  <div class="gen-ai">
+    <div class="dymax-88">
+      <span class="generative-ai">
+        Generative AI
+      </span>
+    </div>
+    <div class="instantly-resolve-60-of-customer-queries">
+      <p class="para">Instantly resolve 60% of customer queries</p>
+    </div>
+    <div class="dyna-para">
+      <span
+        class="dyna-our-groundbreaking-ai-chatbot-utilizes-cutting-edge-ai-technology-to-provide-secure-precise-responses-resolving-customer-inquiries-and-promptly-reducing-your-teams-ticket-volume">
+        Dyna, our groundbreaking AI chatbot, utilizes cutting-edge AI technology to provide secure, precise responses,
+        resolving customer inquiries and promptly reducing your team&#39;s ticket volume. 
+      </span>
+    </div>
+    <div class="cta-90">
+      <span class="lets-talk-91">
+        Learn More about dyna
+      </span>
+      <div class="arrow-circle-right-92">
+        <img class="vector-93" src="./assets/vector93_x2.svg" />
+      </div>
+    </div>
+  </div>
+  <div class="rectangle-31">
+    <!-- <img class="service-pic" src="https://yellow.ai/wp-content/uploads/2023/04/Mask-group-4.webp" alt=""> -->
+    <video autoplay controls loop muted playsinline
+      style="width: 70%; height: 85%;   border-radius: 25px 25px 25px 25px;  background-color: black; box-shadow: 0px 4px 25px 0px #213C87  ">
+      <source src="./assets/Teams demo - Made with Clipchamp 3.mp4" type="video/mp4">
+      <!-- If you have other video formats, you can add them as additional <source> elements -->
+      <track src="./assets/Teams demo - Made with Clipchamp 3.mp4" srclang="en" label="Yellow" kind="subtitles">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="container-125">
+    <div class="f">
+      <img class="green-tick-107" src="./assets/logo/check.png" />
+      <span class="dramatically-reduce-your-support-volume">
+        Drastically reduce your support volume
+      </span>
+    </div>
+    <div class="answers">
+      <img class="green-tick-107" src="./assets/logo/check.png" />
+      <span class="dramatically-reduce-your-support-volume">
+        Provide trustworthy and secure answers
+      </span>
+    </div>
+    <div class="answers-113">
+      <img class="green-tick-107" src="./assets/logo/check.png" />
+      <span class="dramatically-reduce-your-support-volume">
+        Offer multilingual and omni-channel support
+      </span>
+    </div>
+  </div>
+
+
+  <!-- custom avtar -->
+
+  <div class="avatars">
+    <div class="container-153">
+      <div class="ai-avatars">
+        AI AVATARS
+      </div>
+      <div
+        class="browse-through-a-wide-selection-of-avatars-that-encompass-various-ethnic-backgrounds-age-groups-and-styles-or-make-your-own-personalised-avatar">
+        Browse through a wide selection of avatars that encompass various ethnic backgrounds, age groups, and styles or
+        make your own personalised avatar.<br />
+
+      </div>
+      <div class="container-94">
+        <div class="cta-128" onclick="scrollToForm()">
+          <span class="lets-talk-130">
+            GET STARTED FOR FREE
+          </span>
+          <div class="group">
+            <img class="vector-131" src="./assets/vector131_x2.svg" />
+          </div>
+        </div>
+        <div class="cta-132" onclick="scrollToForm()">
+          <span class="lets-talk-134">
+            CREATE YOUR CUSTOM AVATAR
+          </span>
+          <div class="group-135">
+            <img class="vector-136" src="./assets/vector131_x2.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="avtar-bots">
+      <div class="rectangle-35" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-m2" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-dynaptbot" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-35" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-m2" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-35" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-m2" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-dynaptbot" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-35" loading="lazy" width="400" height="75">
+      </div>
+    </div> -->
+
+
+    <div class="outer-rectangle">
+      <div class="rectangle-35" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-m2" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-dynaptbot" loading="lazy" width="400" height="75">
+      </div>
+      <div class="new-bot" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-35" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-m2" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-dynaptbot" loading="lazy" width="400" height="75">
+      </div>
+      <div class="new-bot" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-35" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-m2" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-dynaptbot" loading="lazy" width="400" height="75">
+      </div>
+      <div class="new-bot" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-35" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-m2" loading="lazy" width="400" height="75">
+      </div>
+      <div class="rectangle-dynaptbot" loading="lazy" width="400" height="75">
+      </div>
+      <div class="new-bot" loading="lazy" width="400" height="75">
+      </div>
+    </div>
+
+
+    <!-- <div class="rectangle-35">
+  </div> -->
+    <!-- <div class="rectangle-36">
+  </div>
+  <div class="rectangle-37">
+  </div>
+  <div class="rectangle-202">
+  </div> -->
+  </div>
+
+
+  <!-- custoer -->
+  <div id="customers" class="customers">
+    <div class="what-our-customers-say">
+      What Our Customers Say
+    </div>
+    <div class="container-147">
+      <div class="container-95">
+        <div class="client-logo-1" onclick="changeTestimonialBackground('./assets/omega.png',this)">
+        </div>
+        <div class="client-logo-2" onclick="changeTestimonialBackground('./assets/pwc.png',this)">
+        </div>
+        <div class="client-logo-3" onclick="changeTestimonialBackground('./assets/tcns.png',this)">
+        </div>
+        <div class="client-logo-4" onclick="changeTestimonialBackground('./assets/stemzhealthcare_logo.jpg',this)">
+        </div>
+      </div>
+      <div id="testimonial" class="testimonial-here-126">
+      </div>
+    </div>
+    <div class="cta-121">
+      <span class="lets-talk-122">
+        View all clients
+      </span>
+      <div class="arrow-circle-right-123">
+        <img class="vector-124" src="./assets/vector124_x2.svg" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Dynaptmax.ai -->
+
+  <div class="header">
+    <p class="dynaptmax-ai-51">
+      <span class="dynaptmax-ai-51-sub-18" style="color: white;">DYNAPT</span>MAX<span>.AI</span>
+    </p>
+    <div class="revolutionizing-customer-support">
+      Revolutionizing Customer Support
+    </div>
+    <div class="max-cta">
+      <span class="chat-now">
+        CHAT NOW!!
+      </span>
+    </div>
+  </div>
+
+
+  <div class="container-66">
+    <div class="standard">
+      <div class="support-offerings-54">
+        Support Offerings
+      </div>
+      <div class="standard-offers">
+        <div class="x-7">
+          <img class="green-tick-65" src="./assets/greenTick61_x2.svg" />
+          <span class="x-7-x-365-monitoring-and-support-64">
+            24x7x365 Monitoring and Support
+          </span>
+        </div>
+        <div class="bd-recovery">
+          <img class="green-tick-65" src="./assets/greenTick61_x2.svg" />
+          <span class="backup-and-disaster-recovery-60">
+            Backup and Disaster Recovery
+          </span>
+        </div>
+        <div class="cg">
+          <img class="green-tick-65" src="./assets/greenTick61_x2.svg" />
+          <span class="cloud-governance">
+            Cloud Governance
+          </span>
+        </div>
+      </div>
+      <div class="cta-started-56">
+        <div class="container-125">
+          <span class="get-started-58">
+            GET STARTED
+          </span>
+        </div>
+        <div class="cta-started">
+          <div class="container-131" onclick="scrollToForm()">
+            <span class="get-started">
+              GET STARTED
+            </span>
+          </div>
+          <span class="cost-onboarding">
+            0 Cost Onboarding
+          </span>
+        </div>
+      </div>
+      <span class="standard-55">
+        STANDARD
+      </span>
+    </div>
+    <div class="premium">
+      <span class="premium-3">
+        PREMIUM
+      </span>
+      <div class="support-offerings">
+        Support Offerings
+      </div>
+      <div class="premium-offers">
+        <div class="cg-p">
+          <img class="green-tick-65" src="./assets/greenTick61_x2.svg" />
+          <span class="backup-and-disaster-recovery">
+            24x7x365 Monitoring and Support
+          </span>
+        </div>
+        <div class="cg-p">
+          <img class="green-tick-65" src="./assets/greenTick61_x2.svg" />
+          <span class="backup-and-disaster-recovery">
+            Backup and Disaster Recovery
+          </span>
+        </div>
+        <div class="cg-p">
+          <img class="green-tick-65" src="./assets/greenTick61_x2.svg" />
+          <span class="backup-and-disaster-recovery">
+            Cloud Governance
+          </span>
+        </div>
+        <div class="cg-p">
+          <img class="green-tick-65" src="./assets/greenTick61_x2.svg" />
+          <span class="backup-and-disaster-recovery">
+            Technical Expertise
+          </span>
+        </div>
+        <div class="cg-p">
+          <img class="green-tick-65" src="./assets/greenTick61_x2.svg" />
+          <span class="backup-and-disaster-recovery">
+            Performance Optimization
+          </span>
+        </div>
+        <div class="cg-p">
+          <img class="green-tick-65" src="./assets/greenTick61_x2.svg" />
+          <span class="backup-and-disaster-recovery">
+            Security and Compliance
+          </span>
+        </div>
+        <div class="cg-p">
+          <img class="green-tick-65" src="./assets/greenTick61_x2.svg" />
+          <span class="backup-and-disaster-recovery">
+            Cost Optimization
+          </span>
+        </div>
+      </div>
+      <div class="cta-started">
+        <div class="container-131" onclick="scrollToForm()">
+          <span class="get-started">
+            GET STARTED
+          </span>
+        </div>
+        <span class="cost-onboarding">
+          0 Cost Onboarding
+        </span>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div id="form" class="form">
+    <p class="book-a-free-consultation">
+      <span class="book-a-free-consultation-sub11">Book a free cosultation</span>
+    </p>
+    <p class="join-the-future-of-customer-support-with-dynapt-max">
+      <span class="join-the-future-of-customer-support-with-dynapt-max">JOIN THE FUTURE OF CUSTOMER SUPPORT WITH DYNAPT
+        MAX</span>
+    </p>
+    <div class="name-col">
+      <img class="vector-26" />
+      <div class="enter-your-name">
+        <input id="Inputname" class="enter-your-name" type="text" placeholder="Enter your name">
+      </div>
+    </div>
+    <div class="email-col">
+      <img class="vector-28" />
+      <div class="enter-your-email-address">
+        <input id="Inputmail" class="enter-your-email-address" type="text" placeholder="Enter your email address">
+      </div>
+    </div>
+    <div class="message-col">
+      <img class="vector-30" src="./assets/vector30_x2.svg" />
+      <div class="message">
+        <input id="Inputmessage" class="message" type="text" placeholder="Message">
+      </div>
+    </div>
+    <div class="cta-started-59" onclick="submitForm()">
+      <span class="submit">
+        SUBMIT
+      </span>
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <div class="fooeter-container">
+      <div class="footer-above-section">
+        <p>
+          <span class="footer-heading">Company</span><br>
+          <span class="footer-text">About</span><br>
+          <span class="footer-text">Career</span><br>
+          <span class="footer-text">Brand Center</span><br>
+          <span class="footer-text">Blog</span>
+        </p>
+      </div>
+      <div class="footer-above-section">
+        <p>
+          <span class="footer-heading">HELP CENTER</span><br>
+          <span class="footer-text">Discord server</span><br>
+          <span class="footer-text">Twitter</span><br>
+          <span class="footer-text">Facebook</span><br>
+          <span class="footer-text">Contact us</span>
+        </p>
+      </div>
+      <div class="footer-above-section">
+        <p>
+          <span class="footer-heading">LEGAL</span><br>
+          <span class="footer-text">Privacy policy</span><br>
+          <span class="footer-text">Licensing</span><br>
+          <span class="footer-text">Terms & Conditions</span><br>
+        </p>
+      </div>
+      <div class="footer-above-section">
+        <p>
+          <span class="footer-heading">DOWNLOAD</span><br>
+          <span class="footer-text">iOS</span><br>
+          <span class="footer-text">Android</span><br>
+          <span class="footer-text">Windows Center</span><br>
+          <span class="footer-text">MacOS</span>
+        </p>
+      </div>
+    </div>
+    <hr class="divider">
+    <div class="below-footer" style="background-color: black; display:flex;;">
+
+      <div class="below-left" style="margin-top:20px; align-items: center; justify-content: center; display: flex;">
+        <div class="left-gooter" style="background-color: black">
+          <p class="text-center">© 2023 Dynapt Inc. All rights reserved.</p>
+          <p class="text-center">
+            <a target="_blank" href="https://www.dynapt.com/images/Dynapt_Terms.pdf"
+              style="color: white; text-decoration: none">Terms of Service</a>
+          </p>
+          <p class="text-center">
+            <a target="_blank" href="https://www.dynapt.com/images/Dynapt_Privacy_Policy.pdf"
+              style="color: white; text-decoration: none">Privacy policy</a>
+          </p>
+        </div>
+      </div>
+      <div class="below-right">
+        <div class="below-right">FOLLOW US</div>
+        <div class="image-div">
+          <a href="https://www.facebook.com/DynaptMax"><img class="iconfacebook-icon"
+              src="./assets/iconfacebookIcon_x2.svg" /></a>
+          <a href="https://www.youtube.com/channel/UCaLAuioQyR-eY3xcf2pYPuw"><img class="iconyoutube"
+              src="./assets/iconyoutube_x2.svg" /></a>
+          <a href="https://www.linkedin.com/company/dynaptmax/mycompany/"><img class="iconlinkedin"
+              src="./assets/iconLinkedin_x2.svg" /></a>
+          <a href="https://twitter.com/DynaptMAX"><img class="iconlinkedin" src="./assets/twitter.svg" /></a>
+        </div>
+      </div>
+
+
+
+      <!-- <span class="faqs">
+      FAQs
+    </span>
+    <div class="follow-us">
+      <img class="iconfacebook-icon" />
+      <img class="iconyoutube" /> -->
+
+    </div>
+
+  </div>
+  </div>
+
+  <script src="./index.js"></script>
+
+</body>
+
 </html>
