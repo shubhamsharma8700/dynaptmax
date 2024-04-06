@@ -81,8 +81,8 @@
         <div class="nav-link">
           <a href="#form" class="home">CONTACT</a>
         </div>
-        <div class="cta-started-59">
-          <span class="get-started-61" id="getStartedButton">
+        <div class="cta-started-59" id="getStartedButton">
+          <span class="get-started-61" >
             GET STARTED
           </span>
         </div>
@@ -820,9 +820,9 @@
     <div class="revolutionizing-customer-support">
       Revolutionizing Customer Support
     </div>
-    <div class="max-cta">
+    <div class="max-cta" onclick="scrollToSection('form')">
       <span class="chat-now">
-        CHAT NOW!!
+        CHAT NOW!
       </span>
     </div>
   </div>
@@ -1037,13 +1037,13 @@
       <div class="below-right">
         <div class="below-right">FOLLOW US</div>
         <div class="image-div">
-          <a href="https://www.facebook.com/DynaptMax"><img class="iconfacebook-icon"
+          <a href="https://www.facebook.com/DynaptMax" target="_blank"><img class="iconfacebook-icon"
               src="./assets/iconfacebookIcon_x2.svg" /></a>
-          <a href="https://www.youtube.com/channel/UCaLAuioQyR-eY3xcf2pYPuw"><img class="iconyoutube"
+          <a href="https://www.youtube.com/channel/UCaLAuioQyR-eY3xcf2pYPuw" target="_blank"><img class="iconyoutube"
               src="./assets/iconyoutube_x2.svg" /></a>
-          <a href="https://www.linkedin.com/company/dynaptmax/mycompany/"><img class="iconlinkedin"
+          <a href="https://www.linkedin.com/company/dynaptmax/mycompany/" target="_blank"><img class="iconlinkedin"
               src="./assets/iconLinkedin_x2.svg" /></a>
-          <a href="https://twitter.com/DynaptMAX"><img class="iconlinkedin" src="./assets/twitter.svg" /></a>
+          <a href="https://twitter.com/DynaptMAX" target="_blank"><img class="iconlinkedin" src="./assets/twitter.svg" /></a>
         </div>
       </div>
 
@@ -1062,7 +1062,15 @@
   </div>
 
   <script src="./index.js"></script>
+<script>
+  var button = document.getElementById("getStartedButton");
 
+// Add a click event listener to the button
+button.addEventListener("click", function () {
+  // Open the desired URL in a new tab when the button is clicked
+  window.open("https://bot.dynaptmax.ai/", "_blank");
+});
+</script>
 </body>
 
 </html>

@@ -281,7 +281,7 @@ function submitForm() {
       if (data) {
         alert("Email to Sales has been sent successfully.");
         // Clear input fields
-        document.getElementById('Inputemail').value = "";
+        document.getElementById('Inputmail').value = "";
         document.getElementById('Inputname').value = "";
         document.getElementById('Inputmessage').value = "";
       } else {

@@ -958,6 +958,7 @@ body{
     line-height: 1.5;
     text-transform: uppercase;
     color: #FFFFFF;
+    cursor: pointer;
   }
   .arrow-circle-right {
     margin: 7.9px 0 4.9px 0;
@@ -1948,6 +1949,7 @@ body{
     padding: 17.9px 0px 19.1px 0;
     width: 180.3px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -2054,6 +2056,7 @@ body{
   padding: 11px 27.8px 14px 24px;
   box-sizing: border-box;
   margin-top: 30px;
+  cursor: pointer;
 }  
 .lets-talk-130 {
   margin-right: 14px;
@@ -2091,6 +2094,7 @@ body{
   padding: 11px 27.8px 14px 24px;
   box-sizing: border-box;
   margin-top: 30px;
+  cursor: pointer;
 }
 .cta-532 {
   border-radius: 17px;
@@ -2105,6 +2109,7 @@ body{
   width: 250px;
   margin-left: 140px;
   margin-top: 30px;
+  cursor: pointer;
 }
 .lets-talk-134 {
   margin-right: 9.2px;
@@ -2256,24 +2261,24 @@ background-color: rgb(211, 214, 233);
 .bot-image {
   position: fixed;
   /* border-radius: 50%; */
-  width: 70px;
+  width: 65px;
   height: 75px;
   /* border: green solid 3px; */
   color: #45a049;
-  bottom: 30px;
+  bottom: 85px;
   right: 30px;
-  z-index: 9999; /* Set a high z-index to ensure the image is on top */
+  z-index: 9999;
 }
-.inner-image{
+.inner-image {
   position: fixed;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   /* border: green solid 3px; */
   color: #45a049;
-  bottom: 44px;
-  right: 40px;
-  z-index: 9999; /* Set a high z-index to ensure the image is on top */
+  bottom: 99px;
+  right: 36px;
+  z-index: 9999;
 }
 .bot-chat{
   position: fixed;
@@ -2578,6 +2583,7 @@ background-color: rgb(211, 214, 233);
   padding: 17.9px 0px 19.1px 0;
   width: 220.3px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .chat-now {
   overflow-wrap: break-word;
@@ -2954,6 +2960,7 @@ background-color: rgb(211, 214, 233);
   padding: 18.9px 0 18.1px 4.5px;
   width: 235.3px;
   box-sizing: border-box;
+  cursor: pointer;
 }.get-started {
   overflow-wrap: break-word;
   font-family: 'Roboto';
@@ -3402,6 +3409,7 @@ height: 30px;
   box-sizing: border-box;
   /* margin-top: 30px; */
   justify-content: center;
+  cursor: pointer;
 }
 .cta-132 {
   border-radius: 17px;
