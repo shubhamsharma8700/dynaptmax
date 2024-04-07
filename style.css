@@ -5544,15 +5544,18 @@ display: none
   line-height: 1.333;
   text-transform: uppercase;
 }
-.container-125 {
-  margin: -63px 0px 19px px;
+.container-66 {
+  margin-left: 40px !important;
+  /* text-align: center; */
   display: flex;
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
+  height: 1100px !important;
+  padding-left: 0px;
+  padding-right: 117px;
   justify-content: center;
-  text-align: center;
-  justify-content: center;
-  margin-left: 0px;
+  height: 1439px !important;
+  margin-top: -89px;
 }
 }
