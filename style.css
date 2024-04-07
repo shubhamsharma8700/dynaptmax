@@ -56,6 +56,12 @@ body{
     line-height: 1.5;
     color: #000000;
   }
+  .service-inner-div{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    justify-content: center;
+  }
   .green-tick {
     border-radius: 18px;
     background: #CA2F2F;
@@ -1652,7 +1658,8 @@ body{
     letter-spacing: -0.6px;
     line-height: 1.5;
     color: black;
-    flex : 1
+    flex : 1;
+    margin-bottom: 0px;
   }
   .rectangle-31 {
     align-items: center;
@@ -1774,7 +1781,7 @@ body{
     width: 1280px;
     box-sizing: border-box;
     margin-bottom: 200px;
-    margin-top: -20px;
+    margin-top: 55px;
   }
 
   .container-124 {
@@ -2107,9 +2114,10 @@ body{
   padding: 14px 11.8px 14px 12.2px;
   box-sizing: border-box;
   width: 250px;
-  margin-left: 140px;
+  margin-left: 160px;
   margin-top: 30px;
   cursor: pointer;
+  justify-content: center;
 }
 .lets-talk-134 {
   margin-right: 9.2px;
@@ -3627,10 +3635,6 @@ display: none
 }
 
 
-/* @media screen and (min-width: 1024px) {
-} */
-
-
 
 
 
@@ -4142,576 +4146,6 @@ display: none
 }
 }
 
-@media screen and (max-width: 375px) {
-
-  .looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help {
-    font-family: 'Jost';
-    font-weight: 400;
-    font-size: 30px;
-    letter-spacing: -1.2px;
-    line-height: 1.333;
-    color: #223D88;
-    margin-bottom: 60px;
-    text-align: center;
-    margin-bottom: 74px;
-}
-.rectangle-28 {
-  bottom: 350px;
-  margin: auto;
-  height: 280px;
-  overflow: hidden;
-  background: none;
-  width: 350px;
-}
-.our-clientele {
-  margin-bottom: 15px;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 21px;
-  letter-spacing: -0.7px;
-  line-height: 1.5;
-  color: #FFFFFF;
-}
-rectangle-17 img {
-  display: inline-block;
-  animation: marquee 50s linear infinite;
-  margin-left: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  height: 50px;
-  width: 50x;
-}
-.clients-64 {
-  border-radius: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 1121px;
-  box-sizing: border-box;
-  margin: -216px !important;
-}
-.dynapt-max-is-a-generative-ai-based-help-desk-system-designed-to-revolutionize-customer-support {
-  margin: 0 10px 119px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Jost';
-  font-weight: 300;
-  font-size: 16px;
-  letter-spacing: -0.6px;
-  line-height: 1.5;
-  color: #767070;
-  margin-top: -44px;
-}
-
-.integrated-itsm-system-dynapt-max-automatically-generates-tickets-for-all-requests-as-well-as-summarizes-conversations-for-human-support-through-its-integrated-itsm-system {
-  margin-top: 20px;
-  font-family: 'Roboto';
-  text-align: center;
-  font-weight: 300;
-  font-size: 17px;
-  letter-spacing: -0.5px;
-  line-height: 1.333;
-  color: #182C62;
-}
-.integrated-itsm-system-dynapt-max-automatically-generates-tickets-for-all-requests-as-well-as-summarizes-conversations-for-human-support-through-its-integrated-itsm-system {
-  margin-top: 20px;
-  font-family: 'Roboto';
-  text-align: center;
-  font-weight: 300;
-  font-size: 17px;
-  letter-spacing: -0.5px;
-  line-height: 1.333;
-  color: #182C62;
-  width: 300px;
-}
-.x-7-ai-support-our-24-x-7-x-365-max-bot-services-guarantee-round-the-clock-support-at-a-reasonable-price-backed-by-time-bound-slas {
-  font-family: 'Roboto';
-  font-weight: 300;
-  font-size: 30px;
-  letter-spacing: -0.5px;
-  line-height: 1.333;
-  color: #182C62;
-  text-align: center;
-  width: 300px;
-}
-.integrations-102 {
-  position: absolute;
-  top: 12px;
-  font-family: 'Jost';
-  font-weight: 800;
-  font-size: 23px;
-  letter-spacing: -1.2px;
-  line-height: 1.5;
-  color: #182C62;
-  align-items: center;
-  right: 66px;
-  top: 27px;
-}
-.cta-532 {
-  border-radius: 17px;
-  border: 1px solid #FFFFFF;
-  background: #182C62;
-  position: relative;
-  margin-bottom: 2px;
-  display: flex;
-  flex-direction: row;
-  padding: 14px 11.8px 14px 12.2px;
-  box-sizing: border-box;
-  width: 250px;
-  margin-left: 1px;
-  justify-content: c;
-  margin-right: 2;
-  margin-left: 6px;
-}
-.container-122{
-  display: none;
-}
-.generative-ai {
-  overflow-wrap: break-word;
-  font-family: 'Jost';
-  font-weight: 800;
-  font-size: 25px;
-  letter-spacing: -1.2px;
-  line-height: 1.5;
-  color: #182C62;
-}.dyna-our-groundbreaking-ai-chatbot-utilizes-cutting-edge-ai-technology-to-provide-secure-precise-responses-resolving-customer-inquiries-and-promptly-reducing-your-teams-ticket-volume {
-  text-align: center;
-  overflow-wrap: break-word;
-  font-family: 'Jost';
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 1.5px;
-  line-height: 1.5;
-  color: #767070;
-  /* margin-top: -34px; */
-}
-.f {
-  margin-right: 117.8px;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cta-90 {
-  width: 100%;
-  margin-top: 70px;
-  margin-bottom: 50px;
-  margin-left: 45.4px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-  align-items: center;
-  margin-left: -3px;
-}
-.lets-talk-91 {
-  margin-right: 10.4px;
-  overflow-wrap: break-word;
-  font-family: 'Jost';
-  font-weight: 400;
-  font-size: 12px;
-  letter-spacing: -0.5px;
-  line-height: 1.5;
-  text-transform: uppercase;
-  color: #1877F2;
-}
-.vector-93 {
-  width: 12px;
-  height: 20px;
-  background-size: cover;
-}
-
-.dramatically-reduce-your-support-volume {
-  overflow-wrap: break-word;
-  font-family: 'Jost';
-  font-weight: 700;
-  font-size: 12px;
-  letter-spacing: -0.6px;
-  line-height: 1.5;
-  color: #1877F2;
-  margin-top: 22px;
-  margin-left: -10px;
-}
-.green-tick-107 {
-  margin: 16px 21px -28px 10px;
-  width: 22px;
-  height: 29px;
-}
-.ai-avatars {
-  margin-bottom: 45.5px;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Jost';
-  font-weight: 700;
-  font-size: 24px;
-  letter-spacing: 3.3px;
-  line-height: 1.077;
-  color: #FFFFFF;
-}
-.browse-through-a-wide-selection-of-avatars-that-encompass-various-ethnic-backgrounds-age-groups-and-styles-or-make-your-own-personalised-avatar {
-  margin-bottom: 34.5px;
-  display: inline-block;
-  text-align: center;
-  overflow-wrap: break-word;
-  font-family: 'Jost';
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 1.4px;
-  line-height: 1.786;
-  color: #FFFFFF;
-  width: 300px;
-}
-.rectangle-m2 {
-  border-radius: 60px;
-  background: url(./assets/logo/m2-Photoroom.png);
-  background-size: cover;
-  width: 50px;
-  height: 80px;
-  margin-left: 20px;
-  border: solid black 1px;
-  margin-right: 20px;
-  animation: divmarquee 20s linear infinite;
-}
-.rectangle-m3 {
-  border-radius: 60px;
-  background: url(./assets/logo/m2-Photoroom.png);
-  background-size: cover;
-  width: 50px;
-  height: 80px;
-  margin-left: 20px;
-  border: solid black 1px;
-  margin-right: 20px;
-  animation: divmarquee 20s linear infinite;
-}
-.rectangle-dynaptbot {
-  border-radius: 60px;
-  background: url(./assets/logo/m2-Photoroom.png);
-  background-size: cover;
-  width: 50px;
-  height: 80px;
-  margin-left: 20px;
-  border: solid black 1px;
-  margin-right: 20px;
-  animation: divmarquee 20s linear infinite;
-}
-.rectangle-35 {
-  border-radius: 60px;
-  background: url(./assets/logo/m2-Photoroom.png);
-  background-size: cover;
-  width: 50px;
-  height: 80px;
-  margin-left: 20px;
-  border: solid black 1px;
-  margin-right: 20px;
-  animation: divmarquee 20s linear infinite;
-}
-.container-153{
-  display: none;
-}
-.outer-rectangle{
-  display: none;
-}
-.text-center {
-  text-align: center;
-  margin: 9px -15px -54px -304px;
-}
-.dynaptmax-ai-51 {
-  font-family: 'Jost';
-  font-weight: 700;
-  font-size: 27px;
-  letter-spacing: -1.2px;
-  line-height: 1.333;
-  color: #4DCA2F;
-}
-.revolutionizing-customer-support {
-  margin-bottom: 44.3px;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Jost';
-  font-weight: 500;
-  font-size: 20px;
-  letter-spacing: -0.6px;
-  line-height: 1.5;
-  color: #FFFFFF;
-}
-.chat-now {
-  overflow-wrap: break-word;
-  font-family: 'Jost';
-  font-weight: 700;
-  font-size: 18px;
-  color: #FFFFFF;
-}
-.container-66{
-  display: none;
-}
-.book-a-free-consultation-sub11 {
-  color: white;
-  font-family: 'Jost';
-  font-weight: bold;
-  font-size: 20px;
-  letter-spacing: -1px;
-  line-height: 1.333;
-  text-transform: uppercase;
-}
-.join-the-future-of-customer-support-with-dynapt-max {
-  margin-top: 15px;
-  margin-bottom: 30px;
-  font-family: 'Jost';
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: -0.6px;
-  line-height: 1.333;
-  text-transform: uppercase;
-  color: #4DCA2F;
-}
-.email-col {
-  width: 272px  !important;
-}
-.vector-26 {
-  background: url(./assets/vector26_x2.svg) 50% / contain no-repeat;
-  width: 18px;
-  height: 18px;
-  margin-top: -10px;
-}
-.vector-28 {
-  background: url(./assets/vector28_x2.svg) 50% / contain no-repeat;
-  width: 18px;
-  height: 18px;
-  margin-top: -1px;
-}
-.enter-your-name {
-  width: 90%;
-  outline: none;
-  margin-bottom: 4px;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 200;
-  font-size: 16px;
-  color: #767070;
-  margin-top: -12px;
-  margin-left: 7px;
-}
-.enter-your-email-address {
-  width: 90%;
-  outline: none;
-  margin-left: 30px;
-  margin-bottom: 4px;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 200;
-  font-size: 16px;
-  color: #767070;
-  margin-top: -7px;
-}
-
-.name-col {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  border: 3px solid #213C87;
-  background: #FFFFFF;
-  position: relative;
-  margin-bottom: 66px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-sizing: border-box;
-  text-align: center;
-  margin-left: 25px;
-  width: 272px ! important;
-  padding: 20px 0 20px 29px;
-  border-radius: 50px;
-  height: 6px;
-}
-.rectangle-dynaptbot {
-  border-radius: 60px;
-  background: url(./assets/logo/m3-Photoroom.png);
-  background-size: cover;
-  width: 20px !important;
-  height: 50px !important;
-  margin-left: 10px;
-  border: solid black 1px;
-  margin-right: 20px;
-  animation: divmarquee 20s linear infinite;
-}
-.email-col {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  border: 3px solid #213C87;
-  background: #FFFFFF;
-  position: relative;
-  margin-bottom: 66px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-sizing: border-box;
-  text-align: center;
-  margin-left: 27px;
-  width: 900px;
-  padding: 20px 0 20px 29px;
-  border-radius: 50px;
-  height: 5px;
-  margin-top: -44px;
-}
-.vector-28 {
-  background: url(./assets/vector28_x2.svg) 50% / contain no-repeat;
-  width: 18px;
-  height: 18px;
-  margin-top: -9px;
-}
-.enter-your-email-address {
-  width: 90%;
-  outline: none;
-  margin-left: 6px;
-  margin-bottom: 4px;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 200;
-  font-size: 16px;
-  color: #767070;
-  margin-top: -12px;
-}
-.vector-30 {
-  background-size: 50% / contain no-repeat;
-  width: 18px;
-  height: 18px;
-  margin-top: -9px;
-}
-.message {
-  width: 90%;
-  outline: none;
-  margin-left: -1px;
-  margin-top: 4px;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 200;
-  font-size: 16px;
-  color: #767070;
-  margin-top: -13px;
-}
-.message-col {
-  width: 272px  !important;
-}
-
-.message-col {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  border: 3px solid #213C87;
-  background: #FFFFFF;
-  position: relative;
-  margin-bottom: 66px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-sizing: border-box;
-  text-align: center;
-  margin-left: 32px;
-  width: 900px;
-  padding: 30px 0 30px 29px;
-  border-radius: 50px;
-  height: 6px;
-  font-size: 25px;
-  margin-top: -43px;
-}
-.submit {
-  overflow-wrap: break-word;
-  font-family: 'Jost';
-  font-weight: 700;
-  font-size: 9px;
-  color: #FFFFFF;
-  margin-top: -5px;
-}
-.cta-started-59 {
-  border-radius: 15px;
-  background: #45a049;
-  border: 1px solid transparent;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 17.9px 0px 19.1px 0;
-  width: 81.3px;
-  box-sizing: border-box;
-  height: 10px;
-  margin-left: 24px;
-  margin-top: -30px;
-}
-.form {
-  height: 519px !important;
-} 
-.below-right {
-  flex: 1;
-  text-align: right;
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 2px;
-  line-height: 2.333;
-  color: white;
-  margin-right: 72px;
-}
-.container-125 {
-  margin: -62px 22.5px -20px -7px;
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  box-sizing: border-box;
-  justify-content: space-around;
-  margin-left: 20%;
-}
-.iconfacebook-icon {
-  width: 19px;
-  height: 30px;
-  background-size: 50% / contain no-repeat;
-}
-.iconyoutube {
-  width: 20px;
-  height: 30px;
-  background-size: 50% / contain no-repeat;
-}
-.iconlinkedin {
-  width: 22px;
-  height: 30px;
-  background-size: 50% / contain no-repeat;
-  margin-left: 20px;
-}
-.below-right {
-  flex: 1;
-  text-align: right;
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 2px;
-  line-height: 2.333;
-  color: white;
-  margin-right: 43px;
-}
-}
-
-@media screen and (max-width: 375px){
-.form {
-    height: 580px !important;
-}
-/* .below-left {
-  margin-left: -145px;
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 2px;
-  line-height: 7.333;
-  color: white;
-  margin-left: 278px;
-} */
-.looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help-sub377 {
-  font-family: 'Jost';
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 0px;
-  line-height: -1px;
-  color: #182C62;
-}
-}
 
 .below-right {
   flex: 1;
@@ -4753,4 +4187,619 @@ rectangle-17 img {
   box-sizing: border-box;
   height: 670px;
   margin-top: -19px;
+}
+
+
+/* mobile responsive */
+
+@media screen and (max-width: 425px) {
+
+  .looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help {
+    font-family: 'Jost';
+    font-weight: 800;
+    font-size: 16px !important;
+    letter-spacing: 0.8px;
+    line-height: 1.333;
+    color: #223D88;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.looking-for-a-scalable-and-cost-effective-customer-support-solution-we-can-help-sub377 {
+  font-family: 'Jost';
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: -1px;
+  color: #182C62;
+}
+.rectangle-28 {
+  bottom: 444px;
+  margin: auto;
+  height: 280px;
+  overflow: hidden;
+  background: none;
+  width: 80%;
+  box-shadow: none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 5px 0px #213C87;
+}
+.our-clientele {
+  margin-bottom: 9px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.7px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+.rectangle-17 {
+  padding-top: 5px;
+  border-radius: 50px;
+  white-space: nowrap;
+  position: relative;
+  background: white;
+  margin-top: 7px;
+}
+
+.container-124 {
+  background: #182C62;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 164px 0 50px 0;
+  width: 1440px;
+  box-sizing: border-box;
+  margin-top: 119px;
+  width: 100%;
+  height: 378px;
+}
+.clients-64 {
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1121px;
+  box-sizing: border-box;
+  margin: -138px !important;
+}
+.dynapt-max {
+  font-family: 'Jost';
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -1.2px;
+  line-height: 1.333;
+  color: #4DCA2F;
+  margin-right: 105px;
+  margin-top: 70px;
+}
+.dynapt-max-is-a-generative-ai-based-help-desk-system-designed-to-revolutionize-customer-support {
+  margin: 0 10px 119px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Jost';
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: -0.6px;
+  line-height: 1.5;
+  color: #767070;
+  justify-content: center;
+  width: 80%;
+  margin-top: -30px;
+}
+.services {
+  margin-top: -349px;
+}
+.ticket {
+  background: url(./assets/ticket.png) 50% / contain no-repeat;
+  margin: 0 0 0 0;
+  width: 50px;
+  height: 50px;
+}
+.itsm {
+  flex: 1;
+  box-shadow: 0px 10px 50px 0px rgba(255, 255, 255, 0.55);
+  border-radius: 50px;
+  background: rgb(185, 291, 154);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 27px 16.7px 71.2px 16.4px;
+  box-sizing: border-box;
+  height: 200px;
+  justify-content: center;
+  width: 100%;
+  width: 90%;
+}
+.integrated-itsm-system-dynapt-max-automatically-generates-tickets-for-all-requests-as-well-as-summarizes-conversations-for-human-support-through-its-integrated-itsm-system-sub36 {
+  font-family: 'Jost';
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  line-height: 1.333;
+  color: #182C62;
+}
+.integrated-itsm-system-dynapt-max-automatically-generates-tickets-for-all-requests-as-well-as-summarizes-conversations-for-human-support-through-its-integrated-itsm-system {
+  margin-top: 20px;
+  font-family: 'Roboto';
+  text-align: center;
+  font-weight:  300;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  line-height: 1.333;
+  color: #182C62;
+}
+.adobe-illustrator {
+  background: url(./assets/adobeIllustrator.png) 50% / contain no-repeat;
+  margin-bottom: 16.5px;
+  width: 50px;
+  height: 50px;
+}
+.round-the-clock-support-at-a-reasonable-price-backed-by-time-bound-slas {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: -0.5px;
+  line-height: 0.333;
+  color: #182C62;
+  text-align: center;
+}
+.omni-channel {
+  background: url(./assets/logo/output-onlinepngtools\ \(7\).png) 50% / contain no-repeat;
+  color: white;
+  margin-bottom: 17.5px;
+  width: 50px;
+  height: 50px;
+}
+.container-119 {
+  flex-direction: column;
+  margin-top: -94px;
+}
+.x-7-ai-support-our-24-x-7-x-365-max-bot-services-guarantee-round-the-clock-support-at-a-reasonable-price-backed-by-time-bound-slas {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  line-height: 1.333;
+  color: #182C62;
+  text-align: center;
+}
+.integrations-102 {
+  position: absolute;
+  top: 42px;
+  right: 91.1px;
+  font-family: 'Jost';
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.2px;
+  line-height: 0.5;
+  color: #182C62;
+  align-items: center;
+}
+.image-here {
+  /* border-radius: 50px; */
+  /* margin-right: 52.3px; */
+  width: 100%;
+  height: 390px;
+  margin-left: 0px;
+  /* border-radius: 0px; */
+  margin-top: 45px;
+}
+.looking-for-seamless-integration-without-breaking-the-bank-our-solution-offers-both-affordability-and-ease-of-implementation-ensuring-minimal-disruption-to-your-existing-setup-with-our-low-price-offering-and-hassle-free-integration-process-you-can-enhance-your-customer-support-operations-without-straining-your-budget-or-workflow {
+  margin: 65px 0 119px 0;
+  display: inline-block;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Jost';
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.6px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  flex: 1;
+  margin-top: -58px;
+  justify-content: center;
+}
+.lets-talk-134 {
+  margin-right: 9.2px;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: -0.4px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.vector-136 {
+  background-size: contain no-repeat;
+  width: 18.2px;
+  height: 29.2px;
+  margin-top: -5px;
+}
+.services {
+  margin-top: -349px;
+  justify-content: center;
+}
+.cta-532 {
+  border-radius: 17px;
+  border: 1px solid #FFFFFF;
+  background: #182C62;
+  position: relative;
+  margin-bottom: 2px;
+  display: flex;
+  flex-direction: row;
+  padding: 14px 11.8px 14px 12.2px;
+  box-sizing: border-box;
+  width: 250px;
+  margin-left: 1px;
+  justify-content: c;
+  margin-right: 2;
+  margin-left: 53px;
+  height: 45px;
+  margin-top: -93px;
+}
+.container-122 {
+  margin-left: -5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 105%;
+  box-sizing: border-box;
+  margin-bottom: 200px;
+  margin-top: 37px;
+}
+.whats-app {
+  overflow-wrap: break-word;
+  font-family: 'Jost';
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: -0.6px;
+  line-height: 1.5;
+  color: #182C62;
+}
+.inbound-calls {
+  overflow-wrap: break-word;
+  font-family: 'Jost';
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: -0.6px;
+  line-height: 1.5;
+  color: #182C62;
+}
+.teams-e-mails {
+    overflow-wrap: break-word;
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: -0.6px;
+    line-height: 1.5;
+    color: #182C62;
+}
+.itsm-crm {
+  overflow-wrap: break-word;
+  font-family: 'Jost';
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: -0.6px;
+  line-height: 1.5;
+  color: #182C62;
+}
+.green-tick-103 {
+  background-size: cover;
+  margin: 5px 0px 8px 0;
+  width: 16px;
+  height: 15px;
+  margin-top: 3px;
+}
+.generative-ai {
+  overflow-wrap: break-word;
+  font-family: 'Jost';
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: -1.2px;
+  line-height: 1.5;
+  color: #182C62;
+}
+.instantly-resolve-60-of-customer-queries {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+  margin-left: 0px;
+  font-family: 'Jost';
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.2px;
+  line-height: 1.077;
+  color: #182C62;
+}
+.dyna-our-groundbreaking-ai-chatbot-utilizes-cutting-edge-ai-technology-to-provide-secure-precise-responses-resolving-customer-inquiries-and-promptly-reducing-your-teams-ticket-volume {
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Jost';
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  color: #767070;
+  margin-top: -68px;
+}
+.lets-talk-91 {
+  margin-right: 10.4px;
+  overflow-wrap: break-word;
+  font-family: 'Jost';
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #1877F2;
+  justify-content: center;
+}
+.vector-93 {
+  width: 13px;
+  height: 17px;
+  background-size: cover;
+  margin-left: -16px;
+}
+.gen-ai {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: -86px;
+}
+.instantly-resolve-60-of-customer-queries {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-bottom: 21px;
+  margin-left: 0px;
+  font-family: 'Jost';
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.2px;
+  line-height: 1.077;
+  color: #182C62;
+}
+.cta-90 {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 50px;
+  margin-left: 45.4px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+  align-items: center;
+  margin-left: 0px;
+}
+.rectangle-31 video {
+  width: 90%;
+  border-radius: 25px 25px 25px 25px;
+  background-color: black;
+  box-shadow: 0px 4px 5px 0px #213C87;
+}
+.container-125 {
+  margin: -63px 1px 19px 58px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+}
+.green-tick-107 {
+  margin: 28px 17px 20px 10px;
+  width: 15px;
+  height: 15px;
+}
+.dramatically-reduce-your-support-volume {
+  overflow-wrap: break-word;
+  font-family: 'Jost';
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.6px;
+  line-height: 1.5;
+  color: #1877F2;
+  margin-top: 22px;
+  margin-left: -10px;
+}
+.ai-avatars {
+  margin-bottom: 45.5px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Jost';
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 3.3px;
+  line-height: 1.077;
+  color: #FFFFFF;
+}
+.browse-through-a-wide-selection-of-avatars-that-encompass-various-ethnic-backgrounds-age-groups-and-styles-or-make-your-own-personalised-avatar {
+  margin-bottom: 34.5px;
+  display: inline-block;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Jost';
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.786;
+  color: #FFFFFF;
+  width: 265px;
+}
+.new-bot {
+  border-radius: 10px;
+  background: url(./assets/logo/new-bot.jpg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+  border: solid black 1px;
+  margin-right: 10px;
+  animation: divmarquee 20s linear infinite;
+} 
+.vector-131 {
+  width: 19.2px;
+  height: 25.2px;
+  border: none !important;
+  margin-top: 2px;
+}
+.lets-talk-130 {
+  margin-right: 14px;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: -0.4px;
+  line-height: 2.5;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.lets-talk-134 {
+  margin-right: 9.2px;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: -0.4px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 5px;
+}
+.vector-136 {
+  background-size: contain no-repeat;
+  width: 18.2px;
+  height: 29.2px;
+  margin-top: -1px;
+}
+
+.cta-132 {
+  border-radius: 17px;
+  border: 1px solid #FFFFFF;
+  background: #182C62;
+  position: relative;
+  margin-bottom: -8px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: -13px 15.8px -2px 12px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.rectangle-dynaptbot {
+    border-radius: 15px;
+    background: url(./assets/logo/m3-Photoroom.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+    border: solid black 1px;
+    margin-right: 10px;
+    animation: divmarquee 20s linear infinite;
+}
+.rectangle-m2 {
+  border-radius: 15px;
+  background: url(./assets/logo/m2-Photoroom.jpg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+  border: solid black 1px;
+  margin-right: 10px;
+  animation: divmarquee 20s linear infinite;
+}
+.rectangle-35 {
+  border-radius: 15px;
+  background: url(./assets/logo/dynapt\ bot\ 1-Photoroom.png);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: solid black 1px;
+  animation: divmarquee 20s linear infinite;
+}
+.container-125 {
+  margin: -63px 1px 19px 0px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+}
+.dynaptmax-ai-51 {
+  font-family: 'Jost';
+  font-weight: 700;
+  font-size: 27px;
+  letter-spacing: -1.2px;
+  line-height: 1.333;
+  color: #4DCA2F;
+}
+.revolutionizing-customer-support {
+  margin-bottom: 44.3px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Jost';
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.6px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+.revolutionizing-customer-support {
+  margin-bottom: 44.3px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Jost';
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.6px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+.max-cta {
+  border-radius: 15px;
+  background: rgb(58, 185, 58);
+  border: 1px solid transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 17.9px 0px 19.1px 0;
+  width: 129.3px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.chat-now {
+  overflow-wrap: break-word;
+  font-family: 'Jost';
+  font-weight: 700;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+.header {
+  background: #182C62;
+  position: relative;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 34.5px 0 30.3px 0;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: -171px;
+}
 }
