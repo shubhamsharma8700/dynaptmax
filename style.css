@@ -5476,7 +5476,28 @@ display: none
   box-sizing: border-box;
   cursor: pointer;
 }
-
+.inner-image {
+  position: fixed;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  /* border: green solid 3px; */
+  color: #45a049;
+  /* bottom: 99px; */
+  left: 340px;
+  z-index: 9999;
+}
+.bot-image {
+  position: fixed;
+  /* border-radius: 50%; */
+  width: 55px;
+  height: 65px;
+  /* border: green solid 3px; */
+  color: #45a049;
+  /* bottom: 85px; */
+  left: 332px;
+  z-index: 9999;
+}
 .form {
   margin-top: 70px;
   background: #182C62;
