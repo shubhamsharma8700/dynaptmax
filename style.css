@@ -5577,7 +5577,9 @@ display: none
   /* border: green solid 3px; */
   color: #45a049;
   bottom: 85px;
-  right: 1000px;
+  /* right: 1000px; */
+  left: 12px;
+  
   z-index: 9999;
 }
 .inner-image {
@@ -5588,7 +5590,8 @@ display: none
   /* border: green solid 3px; */
   color: #45a049;
   bottom: 99px;
-  right: 1008px;
+  /* right: 1008px; */
+  left:20px;
   z-index: 9999;
 }
 .meri-close {
@@ -5602,10 +5605,11 @@ display: none
   width: 275px;
   height: 550px;
   bottom: 30px;
-  right: 969px;
+  /* right: 969px; */
   z-index: 10000;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px 0px;
   border-radius: 25px 25px 25px 25px;
   display: none;
+  left: 10px
 }
 }
