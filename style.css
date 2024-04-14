@@ -821,7 +821,7 @@ body{
     color: #FFFFFF;
   }
   .services {
-    margin-top: -489px;
+    margin-top: -615px;
     margin-bottom: 71px;
     display: flex;
     flex-direction: column;
@@ -1634,6 +1634,7 @@ body{
     width: 35px;
     height: 35px;
     margin-top: 10px;
+    filter: saturate(64%) brightness(50%) contrast(99%) hue-rotate(28deg);
  
 
   }
@@ -1768,6 +1769,7 @@ body{
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
+    margin-top: -64px;
   }
   .container-121 {
     border-radius: 15px;
@@ -2123,7 +2125,7 @@ body{
   padding: 14px 11.8px 14px 12.2px;
   box-sizing: border-box;
   width: 250px;
-  margin-left: 160px;
+  margin-left: 120px;
   margin-top: 30px;
   cursor: pointer;
   justify-content: center;
