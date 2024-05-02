@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DynaptMAX</title>
-  <meta name="keywords" content="chatbot, ai chatbot, ai chat, ai bot, ai bots, bot chat ai, managed services, itsm, chatbot ai, managed service provider, it service management, chat ai bot, ai chat app, bot ai chat, itsm service management, itsm services, ai com chat, ai bot app, itsm management, itsm it service management, itsm what is, itsm it, itsm information technology service management, it itsm, it service mgmt, managed services, managed it services, what is managed services, aws managed services, cloud managed services, ai chat bots, chatbot app, cloud management, automated customer service, chat ai app, chatbot services, cloud managed service provider, managed services it, ai chatbot app, itsm process, chat ai com, cloud service management, chatbot bot, chatbot chat, itil and itsm, cloud infrastructure management, ai chat com, chat bot com, bot chat app, cloud computing management, automation of customer service, bot services, cloud managed it services, service management in cloud computing, cloud service management in cloud computing, cloud and managed services, cloud it service management, customer care automation, managed cloud it services, managed it cloud services, cloud computing managed services, cloud based managed services, itsm in itil, managed cloud computing services, helpdesk automation, ai managed services, customer support automation, it managed service provider, itsm system, managed it, itil itsm, customer service automation software, itsm platform, itsm solution, itsm itil, managed it solutions, chat bots ai, solution itsm, it helpdesk automation, managed cloud, customer support automation tools, chatbot system, cloud management system, cloud service management and operations, cloud operations management, itsm as a service, system itsm, cloud managed services offerings, cloud management solutions, customer support automation software, itsm overview, itil itsm processes, service itsm, it support management, cloud to cloud management service, itsm support, automated customer service system, itsm technology, public cloud managed services, automated customer support system, ict service management, a chatbot, managed cloud provider, service management it, help desk automation software, managed public cloud, cloud managed services companies, cloud infrastructure managed services, itsm process manager, cloud management services company, itsm operations, automation for customer service, itil and itsm processes, managed cloud solutions, itsm explained, cloud management company, cloud management and operations, itsm approach, cloud based management, customer service automation platform, itsm process management, cloud it management, automatic customer service, public cloud managed service providers, itsm what is it, public cloud management, cloud managed solutions, itsm is, customer support automation platform, itsm solution manager, cloud infrastructure management in cloud computing, itsm operations management, cloud management service providers, information technology service management system, automated customer care, automated customer service agents, automated customer support services, automation in customer support, cloud based it service management, cloud managed it, cloud management providers, customer service and support automation, infrastructure management in cloud computing, it support managed service provider, itsm and itil processes, itsm ict, itsm ict operations, itsm in it, itsm infrastructure management, itsm service operations, itsm service support, managed as a service, managed cloud as a service, managed it cloud solutions, managed services in cloud computing, service as per itil, automate customer care support platform, itsm be, dynaptmax, escalation automation">
+  <meta name="keywords"
+    content="chatbot, ai chatbot, ai chat, ai bot, ai bots, bot chat ai, managed services, itsm, chatbot ai, managed service provider, it service management, chat ai bot, ai chat app, bot ai chat, itsm service management, itsm services, ai com chat, ai bot app, itsm management, itsm it service management, itsm what is, itsm it, itsm information technology service management, it itsm, it service mgmt, managed services, managed it services, what is managed services, aws managed services, cloud managed services, ai chat bots, chatbot app, cloud management, automated customer service, chat ai app, chatbot services, cloud managed service provider, managed services it, ai chatbot app, itsm process, chat ai com, cloud service management, chatbot bot, chatbot chat, itil and itsm, cloud infrastructure management, ai chat com, chat bot com, bot chat app, cloud computing management, automation of customer service, bot services, cloud managed it services, service management in cloud computing, cloud service management in cloud computing, cloud and managed services, cloud it service management, customer care automation, managed cloud it services, managed it cloud services, cloud computing managed services, cloud based managed services, itsm in itil, managed cloud computing services, helpdesk automation, ai managed services, customer support automation, it managed service provider, itsm system, managed it, itil itsm, customer service automation software, itsm platform, itsm solution, itsm itil, managed it solutions, chat bots ai, solution itsm, it helpdesk automation, managed cloud, customer support automation tools, chatbot system, cloud management system, cloud service management and operations, cloud operations management, itsm as a service, system itsm, cloud managed services offerings, cloud management solutions, customer support automation software, itsm overview, itil itsm processes, service itsm, it support management, cloud to cloud management service, itsm support, automated customer service system, itsm technology, public cloud managed services, automated customer support system, ict service management, a chatbot, managed cloud provider, service management it, help desk automation software, managed public cloud, cloud managed services companies, cloud infrastructure managed services, itsm process manager, cloud management services company, itsm operations, automation for customer service, itil and itsm processes, managed cloud solutions, itsm explained, cloud management company, cloud management and operations, itsm approach, cloud based management, customer service automation platform, itsm process management, cloud it management, automatic customer service, public cloud managed service providers, itsm what is it, public cloud management, cloud managed solutions, itsm is, customer support automation platform, itsm solution manager, cloud infrastructure management in cloud computing, itsm operations management, cloud management service providers, information technology service management system, automated customer care, automated customer service agents, automated customer support services, automation in customer support, cloud based it service management, cloud managed it, cloud management providers, customer service and support automation, infrastructure management in cloud computing, it support managed service provider, itsm and itil processes, itsm ict, itsm ict operations, itsm in it, itsm infrastructure management, itsm service operations, itsm service support, managed as a service, managed cloud as a service, managed it cloud solutions, managed services in cloud computing, service as per itil, automate customer care support platform, itsm be, dynaptmax, escalation automation">
 
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,13 +33,105 @@
       margin: auto;
     }
   </style>
+  <style>
+    /* Base styles */
+    .BotDemoContainer {
+      background-color: #3c1b77;
+      padding: 20px 20px 40px 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .BotDemoContainer h1 {
+      color: #ebc345;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .BotDemoCards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+    }
+
+    .Democard {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
+
+    .Democard img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;  
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .content h3 {
+      color: #3c1b77;
+      margin-bottom: 20px;
+    }
+
+    .badge {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 5px 10px;
+      color: #3c1b77;
+      font-weight: bold;
+    }
+
+    .learn-more {
+      background-color:#45a049;;
+      color: #f2eff6;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .learn-more:hover {
+      background-color: #0f4511;;
+      color: #f2eff6;
+      text-decoration: none;
+    }
+
+    /* Media query for tablets */
+    @media (max-width: 768px) {
+      .BotDemoCards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .Democard {
+        width: 80%;
+      }
+    }
+
+    /* Media query for mobile phones */
+    @media (max-width: 480px) {
+      .Democard {
+        width: 100%;
+      }
+
+      .content {
+        padding: 10px;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <img class="inner-image" onclick="onChatBot()" src="./assets/logo/dlogo.jpg" alt="">
   <img class="bot-image" onclick="onChatBot()" src="./assets/logo/icons8-message-50 (1).png" alt="">
   <div class="bot-chat">
-    <div  class="mera-bot"
+    <div class="mera-bot"
       style="display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid rgb(204, 204, 204); background: #45a049; border-top-left-radius: 10px; border-top-right-radius: 10px;">
       <div style="display: flex; align-items: center; justify-content: center;">
         <div>
@@ -54,7 +147,7 @@
     </div>
     <div class="bot-body" style="height: 500px;">
       <iframe src="https://dynaptmaxnew.web.app/" width="100%" height="100%" frameborder="0"
-        style="border-radius: 0px 0px 25px 25px;"></iframe>
+        style="border-radius: 0px 0px 25px 25px;" allow="microphone"></iframe>
     </div>
   </div>
   <div class="copy-landing-page">
@@ -83,7 +176,7 @@
           <a href="#form" class="home">CONTACT</a>
         </div>
         <div class="cta-started-59" id="getStartedButton">
-          <span class="get-started-61" >
+          <span class="get-started-61">
             GET STARTED
           </span>
         </div>
@@ -571,24 +664,25 @@
             Your browser does not support the video tag.
           </video>
         </div>
-        
-      <div class="service-inner-div" >
-        <div
-        class="looking-for-seamless-integration-without-breaking-the-bank-our-solution-offers-both-affordability-and-ease-of-implementation-ensuring-minimal-disruption-to-your-existing-setup-with-our-low-price-offering-and-hassle-free-integration-process-you-can-enhance-your-customer-support-operations-without-straining-your-budget-or-workflow">
-        Looking for seamless integration without breaking the bank? Our solution offers both affordability and ease of
-        implementation, ensuring minimal disruption to your existing setup. With our low-price offering and
-        hassle-free integration process, you can enhance your customer support operations without straining your
-        budget or workflow.
-      </div>
-      <div class="cta-532" onclick="scrollToForm()">
-        <span class="lets-talk-134">
-          GET STARTED NOW
-        </span>
-        <div class="group-535">
-          <img class="vector-136" src="./assets/vector131_x2.svg" />
+
+        <div class="service-inner-div">
+          <div
+            class="looking-for-seamless-integration-without-breaking-the-bank-our-solution-offers-both-affordability-and-ease-of-implementation-ensuring-minimal-disruption-to-your-existing-setup-with-our-low-price-offering-and-hassle-free-integration-process-you-can-enhance-your-customer-support-operations-without-straining-your-budget-or-workflow">
+            Looking for seamless integration without breaking the bank? Our solution offers both affordability and ease
+            of
+            implementation, ensuring minimal disruption to your existing setup. With our low-price offering and
+            hassle-free integration process, you can enhance your customer support operations without straining your
+            budget or workflow.
+          </div>
+          <div class="cta-532" onclick="scrollToForm()">
+            <span class="lets-talk-134">
+              GET STARTED NOW
+            </span>
+            <div class="group-535">
+              <img class="vector-136" src="./assets/vector131_x2.svg" />
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
 
 
       </div>
@@ -654,7 +748,8 @@
   <div class="rectangle-31">
     <!-- <img class="service-pic" src="https://yellow.ai/wp-content/uploads/2023/04/Mask-group-4.webp" alt=""> -->
     <video autoplay controls loop muted playsinline
-      style="width: 70%; height: 85%;   border-radius: 25px 25px 25px 25px;  background-color: black; box-shadow: 0px 4px 25px 0px #213C87  " id="use-cases">
+      style="width: 70%; height: 85%;   border-radius: 25px 25px 25px 25px;  background-color: black; box-shadow: 0px 4px 25px 0px #213C87  "
+      id="use-cases">
       <source src="./assets/Teams demo - Made with Clipchamp 3.mp4" type="video/mp4">
       <!-- If you have other video formats, you can add them as additional <source> elements -->
       <track src="./assets/Teams demo - Made with Clipchamp 3.mp4" srclang="en" label="Yellow" kind="subtitles">
@@ -816,6 +911,38 @@
 
   <!-- Dynaptmax.ai -->
 
+  <div class="BotDemoContainer">
+    <div class="ai-avatars">
+      BOT TEMPLATES
+    </div>
+
+    <div class="BotDemoCards">
+      <div class="Democard">
+        <img src="assets/Customer.png" alt="Service Cloud" />
+        <div class="content">
+          <h3>Sales Bot</h3>
+          <a href="https://dynaptmaxnew.web.app/" target="_blank" class="learn-more">View Demo</a>
+        </div>
+      </div>
+
+      <div class="Democard">
+        <img src="assets/general.png" alt="Commerce Cloud" />
+        <div class="content">
+          <h3>General Bot</h3>
+          <a href="https://dynaptmaxjumbo.web.app/" target="_blank" class="learn-more">View Demo</a>
+        </div>
+      </div>
+
+      <div class="Democard">
+        <img src="assets/mentalHealth.png" alt="EX Cloud" />
+        <div class="content">
+          <h3>Mental Health Bot</h3>
+          <a href="https://mentalhealthadvisor-92e7f.web.app/" target="_blank" class="learn-more">View Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="header">
     <p class="dynaptmax-ai-51">
       <span class="dynaptmax-ai-51-sub-18" style="color: white;">DYNAPT</span>MAX<span>.AI</span>
@@ -829,8 +956,6 @@
       </span>
     </div>
   </div>
-
-
   <div class="container-66">
     <div class="standard">
       <div class="support-offerings-54">
@@ -1046,7 +1171,8 @@
               src="./assets/iconyoutube_x2.svg" /></a>
           <a href="https://www.linkedin.com/company/dynaptmax/mycompany/" target="_blank"><img class="iconlinkedin"
               src="./assets/iconLinkedin_x2.svg" /></a>
-          <a href="https://twitter.com/DynaptMAX" target="_blank"><img class="iconlinkedin" src="./assets/twitter.svg" /></a>
+          <a href="https://twitter.com/DynaptMAX" target="_blank"><img class="iconlinkedin"
+              src="./assets/twitter.svg" /></a>
         </div>
       </div>
 
@@ -1065,16 +1191,16 @@
   </div>
 
   <script src="./index.js"></script>
-<script>
-  var button = document.getElementById("getStartedButton");
+  <script>
+    var button = document.getElementById("getStartedButton");
 
-// Add a click event listener to the button
-button.addEventListener("click", function () {
-  // Open the desired URL in a new tab when the button is clicked
-  //window.open("https://bot.dynaptmax.ai/", "_blank");
-  window.open("https://dynaptmaxnew.web.app/", "_blank");
-});
-</script>
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Open the desired URL in a new tab when the button is clicked
+      //window.open("https://bot.dynaptmax.ai/", "_blank");
+      window.open("https://dynaptmaxnew.web.app/", "_blank");
+    });
+  </script>
 </body>
 
 </html>
