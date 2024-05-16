@@ -238,14 +238,23 @@ function isValidEmail(email) {
   return regex.test(String(email).toLowerCase());
 }
 
+function isValidPhoneNumber(phoneNumber) {
+  // Regular expression to test the phone number format
+  const regex = /^\+?(\d{1,3})?[-.\s]?(\(?\d{3}\)?)[-.\s]?(\d{3})[-.\s]?(\d{4})$/;
+
+  return regex.test(String(phoneNumber).trim());
+}
+
+
 function submitForm() {
   // Retrieve input values
   const email = document.getElementById('Inputmail').value;
   const name = document.getElementById('Inputname').value;
   const comment = document.getElementById('Inputmessage').value;
+  const phone = document.getElementById('inputphone').value;
 
   // Check if any field is empty
-  if (email.trim() === "" || name.trim() === "" || comment.trim() === "") {
+  if (email.trim() === "" || name.trim() === "" || comment.trim() === "" || phone.trim()==="") {
     alert("Please fill all fields");
     return;
   }
@@ -258,11 +267,19 @@ function submitForm() {
     }
   }
 
+   // Validate phone format
+   if (phone.trim() !== "") {
+    if (!isValidPhoneNumber(phone)) {
+      alert(phone + " is not a valid phone number.");
+      return;
+    }
+  }
+
   // Prepare the data to be sent
   const data = {
     name: name,
     email: email,
-    phone: "", // Static value as example; adjust as needed
+    phone: phone, // Static value as example; adjust as needed
     subject: "Enquiry",
     comment: comment
   };
@@ -284,6 +301,7 @@ function submitForm() {
         document.getElementById('Inputmail').value = "";
         document.getElementById('Inputname').value = "";
         document.getElementById('Inputmessage').value = "";
+        document.getElementById('inputphone').value="";
       } else {
         alert("Failed to send email. Please try again later.");
       }

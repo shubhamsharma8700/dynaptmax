@@ -383,6 +383,10 @@ body{
     width: 20px;
     height: 20px;
   }
+  .vector-phone {
+    width: 20px;
+    height: 20px;
+  }
   .po-p {
     margin-bottom: 21px;
     display: flex;
@@ -3009,6 +3013,13 @@ background-color: rgb(211, 214, 233);
   margin-top: -10px;
 
 }
+.vector-phone {
+  background: url(./assets/phone.png) 50% / contain no-repeat;
+  width: 44px;
+  height: 44px;
+  margin-top: -10px;
+
+}
 .vector-30 {
   background-size: 50% / contain no-repeat;
   width: 44px;
@@ -5156,6 +5167,12 @@ display: none
   height: 25px;
   margin-top: -10px;
 }
+.vector-phone {
+  background: url(./assets/phone.png) 50% / contain no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-top: -10px;
+}
 .enter-your-email-address {
   width: 200px;
   outline: none;
@@ -5172,6 +5189,12 @@ display: none
 }
 .vector-28 {
   background: url(./assets/vector28_x2.svg) 50% / contain no-repeat;
+  width: 18px;
+  height: 17px;
+  margin-top: -10px;
+}
+.vector-phone {
+  background: url(./assets/phone.png) 50% / contain no-repeat;
   width: 18px;
   height: 17px;
   margin-top: -10px;
